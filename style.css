@@ -109,6 +109,12 @@ button:hover {
     border: 2px dashed #cfe7ff;
 }
 
+#element {
+    margin-top: 0.4rem;
+    font-weight: 600;
+    color: #ff7aa2;
+}
+
 .hidden {
     display: none;
 }
