@@ -3,9 +3,21 @@ const detailI18n = {
         documentTitle: 'Ilju Detail',
         title: 'Ilju Detail',
         subtitle: '{color} {animal} · {element} energy',
+        langLabel: 'Language',
+        languageNames: {
+            en: 'English',
+            ja: 'Japanese',
+            ko: 'Korean'
+        },
         energyTitle: 'Energy',
         animalTitle: 'Animal Traits',
         blendTitle: 'Element × Animal',
+        aboutIljuTitle: 'What is Ilju (Daily Pillar)?',
+        aboutIljuText: 'Ilju is the day pillar in the four pillars system, based on the date of birth.',
+        aboutSymbolsTitle: 'What do the animal and element mean?',
+        aboutSymbolsText: 'The animal and element are traditional symbols used to describe qualities in a simple, symbolic way.',
+        disclaimerTitle: 'Disclaimer',
+        disclaimerText: 'This page does not store your input or personal data.',
         back: '← Back',
         invalid: 'Invalid page. Please return to the main page.',
         elementTraits: {
@@ -55,9 +67,21 @@ const detailI18n = {
         documentTitle: '十二支の詳細',
         title: '十二支の詳細',
         subtitle: '{color}の{animal}・{element}の気',
+        langLabel: '言語',
+        languageNames: {
+            en: '英語',
+            ja: '日本語',
+            ko: '韓国語'
+        },
         energyTitle: '気の特徴',
         animalTitle: '動物の特徴',
         blendTitle: '気 × 動物',
+        aboutIljuTitle: '日柱（イルジュ）とは？',
+        aboutIljuText: '日柱は四柱推命で、生年月日の日に基づく柱です。',
+        aboutSymbolsTitle: '動物と気の意味',
+        aboutSymbolsText: '動物と気は、性質を簡潔に表すための伝統的な象徴です。',
+        disclaimerTitle: '注意',
+        disclaimerText: 'このページでは入力内容や個人データを保存しません。',
         back: '← 戻る',
         invalid: 'ページが見つかりません。トップに戻ってください。',
         elementTraits: {
@@ -107,9 +131,21 @@ const detailI18n = {
         documentTitle: '일주 동물 자세히 보기',
         title: '일주 동물 자세히 보기',
         subtitle: '{color} {animal} · {element}의 기운',
+        langLabel: '언어',
+        languageNames: {
+            en: '영어',
+            ja: '일본어',
+            ko: '한국어'
+        },
         energyTitle: '기운 특징',
         animalTitle: '동물 성향',
         blendTitle: '기운 × 동물',
+        aboutIljuTitle: '일주(일간)란?',
+        aboutIljuText: '일주는 사주에서 생년월일 중 “일”을 기준으로 한 기둥입니다.',
+        aboutSymbolsTitle: '동물과 기운의 의미',
+        aboutSymbolsText: '동물과 오행은 전통적으로 성향을 간단히 표현하는 상징입니다.',
+        disclaimerTitle: '안내',
+        disclaimerText: '이 페이지는 입력값이나 개인정보를 저장하지 않습니다.',
         back: '← 돌아가기',
         invalid: '잘못된 페이지입니다. 메인으로 돌아가주세요.',
         elementTraits: {
@@ -158,19 +194,25 @@ const detailI18n = {
 };
 
 const languageSelect = document.getElementById('languageSelect');
+const langSwitcher = document.querySelector('.lang-switcher');
 let currentLang = 'en';
 
 const params = new URLSearchParams(window.location.search);
 const idParam = params.get('id');
 const langParam = params.get('lang');
 
+const savedLang = sessionStorage.getItem('lang');
+if (savedLang && detailI18n[savedLang]) {
+    currentLang = savedLang;
+}
 if (langParam && detailI18n[langParam]) {
     currentLang = langParam;
-    languageSelect.value = currentLang;
 }
+languageSelect.value = currentLang;
 
 languageSelect.addEventListener('change', (event) => {
     currentLang = event.target.value;
+    sessionStorage.setItem('lang', currentLang);
     applyDetail(currentLang);
 });
 
@@ -185,12 +227,23 @@ function applyDetail(lang) {
     document.documentElement.lang = lang;
     document.title = copy.documentTitle;
     document.getElementById('title').innerText = copy.title;
+    document.getElementById('langLabel').innerText = copy.langLabel;
+    languageSelect.setAttribute('aria-label', copy.langLabel);
+    languageSelect.options[0].text = copy.languageNames.en;
+    languageSelect.options[1].text = copy.languageNames.ja;
+    languageSelect.options[2].text = copy.languageNames.ko;
     document.getElementById('energyTitle').innerText = copy.energyTitle;
     document.getElementById('animalTitle').innerText = copy.animalTitle;
     document.getElementById('blendTitle').innerText = copy.blendTitle;
-    document.getElementById('langLabel').innerText = lang === 'ko' ? '언어' : lang === 'ja' ? '言語' : 'Language';
+    document.getElementById('aboutIljuTitle').innerText = copy.aboutIljuTitle;
+    document.getElementById('aboutIljuText').innerText = copy.aboutIljuText;
+    document.getElementById('aboutSymbolsTitle').innerText = copy.aboutSymbolsTitle;
+    document.getElementById('aboutSymbolsText').innerText = copy.aboutSymbolsText;
+    document.getElementById('disclaimerTitle').innerText = copy.disclaimerTitle;
+    document.getElementById('disclaimerText').innerText = copy.disclaimerText;
     document.getElementById('backLink').innerText = copy.back;
     document.getElementById('backLink').href = `index.html?lang=${lang}`;
+    langSwitcher.setAttribute('data-lang', lang);
 
     const cycleIndex = getCycleIndexFromId(idParam);
     if (cycleIndex === null) {
