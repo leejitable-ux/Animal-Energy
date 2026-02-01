@@ -54,14 +54,21 @@ const detailI18n = {
             { name: 'Ren', element: 'Water' },
             { name: 'Gui', element: 'Water' }
         ],
-        colors: {
+        elementNames: {
+            Wood: 'Wood',
+            Fire: 'Fire',
+            Earth: 'Earth',
+            Metal: 'Metal',
+            Water: 'Water'
+        },
+        colorWords: {
             Wood: 'Blue-Green',
             Fire: 'Red',
             Earth: 'Yellow',
             Metal: 'White',
             Water: 'Black'
         },
-        animals: ['Monkey', 'Rooster', 'Dog', 'Pig', 'Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat']
+        animals: ['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig']
     },
     ja: {
         documentTitle: '十二支の詳細',
@@ -85,11 +92,11 @@ const detailI18n = {
         back: '← 戻る',
         invalid: 'ページが見つかりません。トップに戻ってください。',
         elementTraits: {
-            木: '成長、あたたかさ、柔軟さ、着実な前進。',
-            火: '情熱、表現力、勇気、素早い行動力。',
-            土: '安定、思いやり、バランス、頼れる強さ。',
-            金: '明晰さ、秩序、鍛錬、洗練された集中力。',
-            水: '直感、深さ、適応力、穏やかな流れ。'
+            Wood: '成長、あたたかさ、柔軟さ、着実な前進。',
+            Fire: '情熱、表現力、勇気、素早い行動力。',
+            Earth: '安定、思いやり、バランス、頼れる強さ。',
+            Metal: '明晰さ、秩序、鍛錬、洗練された集中力。',
+            Water: '直感、深さ、適応力、穏やかな流れ。'
         },
         animalTraits: {
             鼠: '機転が利き、好奇心が強い。',
@@ -107,25 +114,32 @@ const detailI18n = {
         },
         blendTemplate: '{element}の気の{animal}は、{elementTrait}と{animal}の{animalTrait}な性質をあわせ持ちます。',
         stems: [
-            { name: '甲', element: '木' },
-            { name: '乙', element: '木' },
-            { name: '丙', element: '火' },
-            { name: '丁', element: '火' },
-            { name: '戊', element: '土' },
-            { name: '己', element: '土' },
-            { name: '庚', element: '金' },
-            { name: '辛', element: '金' },
-            { name: '壬', element: '水' },
-            { name: '癸', element: '水' }
+            { name: '甲', element: 'Wood' },
+            { name: '乙', element: 'Wood' },
+            { name: '丙', element: 'Fire' },
+            { name: '丁', element: 'Fire' },
+            { name: '戊', element: 'Earth' },
+            { name: '己', element: 'Earth' },
+            { name: '庚', element: 'Metal' },
+            { name: '辛', element: 'Metal' },
+            { name: '壬', element: 'Water' },
+            { name: '癸', element: 'Water' }
         ],
-        colors: {
-            木: '青',
-            火: '赤',
-            土: '黄',
-            金: '白',
-            水: '黒'
+        elementNames: {
+            Wood: '木',
+            Fire: '火',
+            Earth: '土',
+            Metal: '金',
+            Water: '水'
         },
-        animals: ['猿', '鶏', '犬', '猪', '鼠', '牛', '虎', '兎', '龍', '蛇', '馬', '羊']
+        colorWords: {
+            Wood: '青',
+            Fire: '赤',
+            Earth: '黄',
+            Metal: '白',
+            Water: '黒'
+        },
+        animals: ['鼠', '牛', '虎', '兎', '龍', '蛇', '馬', '羊', '猿', '鶏', '犬', '猪']
     },
     ko: {
         documentTitle: '일주 동물 자세히 보기',
@@ -149,11 +163,11 @@ const detailI18n = {
         back: '← 돌아가기',
         invalid: '잘못된 페이지입니다. 메인으로 돌아가주세요.',
         elementTraits: {
-            목: '성장, 따뜻함, 유연함, 꾸준한 전진.',
-            화: '열정, 표현력, 용기, 빠른 행동력.',
-            토: '안정, 배려, 균형, 든든한 힘.',
-            금: '명확함, 질서, 절제, 정교한 집중.',
-            수: '직관, 깊이, 적응력, 차분한 흐름.'
+            Wood: '성장, 따뜻함, 유연함, 꾸준한 전진.',
+            Fire: '열정, 표현력, 용기, 빠른 행동력.',
+            Earth: '안정, 배려, 균형, 든든한 힘.',
+            Metal: '명확함, 질서, 절제, 정교한 집중.',
+            Water: '직관, 깊이, 적응력, 차분한 흐름.'
         },
         animalTraits: {
             쥐: '눈치가 빠르고, 재치가 있으며 호기심이 많아요.',
@@ -171,25 +185,32 @@ const detailI18n = {
         },
         blendTemplate: '{element}의 기운을 지닌 {animal}은(는) {elementTrait} 그리고 {animal}의 {animalTrait} 기질을 함께 지녀요.',
         stems: [
-            { name: '갑', element: '목' },
-            { name: '을', element: '목' },
-            { name: '병', element: '화' },
-            { name: '정', element: '화' },
-            { name: '무', element: '토' },
-            { name: '기', element: '토' },
-            { name: '경', element: '금' },
-            { name: '신', element: '금' },
-            { name: '임', element: '수' },
-            { name: '계', element: '수' }
+            { name: '갑', element: 'Wood' },
+            { name: '을', element: 'Wood' },
+            { name: '병', element: 'Fire' },
+            { name: '정', element: 'Fire' },
+            { name: '무', element: 'Earth' },
+            { name: '기', element: 'Earth' },
+            { name: '경', element: 'Metal' },
+            { name: '신', element: 'Metal' },
+            { name: '임', element: 'Water' },
+            { name: '계', element: 'Water' }
         ],
-        colors: {
-            목: '푸른',
-            화: '붉은',
-            토: '노란',
-            금: '하얀',
-            수: '검은'
+        elementNames: {
+            Wood: '목',
+            Fire: '화',
+            Earth: '토',
+            Metal: '금',
+            Water: '수'
         },
-        animals: ['원숭이', '닭', '개', '돼지', '쥐', '소', '호랑이', '토끼', '용', '뱀', '말', '양']
+        colorWords: {
+            Wood: '푸른',
+            Fire: '붉은',
+            Earth: '노란',
+            Metal: '하얀',
+            Water: '검은'
+        },
+        animals: ['쥐', '소', '호랑이', '토끼', '용', '뱀', '말', '양', '원숭이', '닭', '개', '돼지']
     }
 };
 
@@ -256,15 +277,16 @@ function applyDetail(lang) {
 
     const stem = copy.stems[cycleIndex % 10];
     const animal = copy.animals[cycleIndex % 12];
-    const element = stem.element;
-    const color = copy.colors[element];
+    const elementKey = stem.element;
+    const element = copy.elementNames[elementKey];
+    const color = copy.colorWords[elementKey];
 
     document.getElementById('subtitle').innerText = copy.subtitle
         .replace('{color}', color)
         .replace('{animal}', animal)
         .replace('{element}', element);
 
-    const elementTrait = copy.elementTraits[element];
+    const elementTrait = copy.elementTraits[elementKey];
     const animalTrait = copy.animalTraits[animal];
     document.getElementById('energyText').innerText = elementTrait;
     document.getElementById('animalText').innerText = animalTrait;

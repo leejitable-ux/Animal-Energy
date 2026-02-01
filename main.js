@@ -30,6 +30,13 @@ const i18n = {
         invalidDay: 'Please enter a valid day for the selected month and year.',
         animalSentence: 'Your Ilju animal is {animal}.',
         elementSentence: '{color} {animal}, with {element} energy.',
+        elementNames: {
+            Wood: 'Wood',
+            Fire: 'Fire',
+            Earth: 'Earth',
+            Metal: 'Metal',
+            Water: 'Water'
+        },
         elementKeywords: {
             Wood: 'growth · kindness · steady',
             Fire: 'passion · confidence · spark',
@@ -37,15 +44,16 @@ const i18n = {
             Metal: 'clarity · focus · discipline',
             Water: 'intuition · depth · flow'
         },
-        elements: ['Metal', 'Metal', 'Earth', 'Water', 'Water', 'Earth', 'Wood', 'Wood', 'Earth', 'Fire', 'Fire', 'Earth'],
-        colors: {
+        colorWords: {
             Wood: 'Blue-Green',
             Fire: 'Red',
             Earth: 'Yellow',
             Metal: 'White',
             Water: 'Black'
         },
-        animals: ['Monkey', 'Rooster', 'Dog', 'Pig', 'Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat']
+        animals: ['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig'],
+        stems: ['Jia', 'Yi', 'Bing', 'Ding', 'Wu', 'Ji', 'Geng', 'Xin', 'Ren', 'Gui'],
+        stemElements: ['Wood', 'Wood', 'Fire', 'Fire', 'Earth', 'Earth', 'Metal', 'Metal', 'Water', 'Water']
     },
     ja: {
         documentTitle: '十二支を確認',
@@ -78,22 +86,30 @@ const i18n = {
         invalidDay: '選択した年月に合う日付を入力してください。',
         animalSentence: 'あなたの十二支は{animal}です。',
         elementSentence: '{color}の{animal}、{element}の気を持つ動物です。',
+        elementNames: {
+            Wood: '木',
+            Fire: '火',
+            Earth: '土',
+            Metal: '金',
+            Water: '水'
+        },
         elementKeywords: {
-            木: '成長・柔軟・温かさ',
-            火: '情熱・表現・勢い',
-            土: '安定・安心・包容',
-            金: '明晰・規律・芯の強さ',
-            水: '直感・深み・適応'
+            Wood: '成長・柔軟・温かさ',
+            Fire: '情熱・表現・勢い',
+            Earth: '安定・安心・包容',
+            Metal: '明晰・規律・芯の強さ',
+            Water: '直感・深み・適応'
         },
-        elements: ['金', '金', '土', '水', '水', '土', '木', '木', '土', '火', '火', '土'],
-        colors: {
-            木: '青',
-            火: '赤',
-            土: '黄',
-            金: '白',
-            水: '黒'
+        colorWords: {
+            Wood: '青',
+            Fire: '赤',
+            Earth: '黄',
+            Metal: '白',
+            Water: '黒'
         },
-        animals: ['猿', '鶏', '犬', '猪', '鼠', '牛', '虎', '兎', '龍', '蛇', '馬', '羊']
+        animals: ['鼠', '牛', '虎', '兎', '龍', '蛇', '馬', '羊', '猿', '鶏', '犬', '猪'],
+        stems: ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'],
+        stemElements: ['Wood', 'Wood', 'Fire', 'Fire', 'Earth', 'Earth', 'Metal', 'Metal', 'Water', 'Water']
     },
     ko: {
         documentTitle: '일주 동물 확인',
@@ -126,22 +142,30 @@ const i18n = {
         invalidDay: '선택한 연/월에 맞는 일자를 입력해주세요.',
         animalSentence: '십이지신 중 {animal}입니다.',
         elementSentence: '{color} {animal}, {element}의 기운을 지닌 동물이에요.',
+        elementNames: {
+            Wood: '목',
+            Fire: '화',
+            Earth: '토',
+            Metal: '금',
+            Water: '수'
+        },
         elementKeywords: {
-            목: '성장 · 유연 · 따뜻',
-            화: '열정 · 표현 · 에너지',
-            토: '안정 · 균형 · 배려',
-            금: '명확 · 절제 · 집중',
-            수: '직관 · 깊이 · 흐름'
+            Wood: '성장 · 유연 · 따뜻',
+            Fire: '열정 · 표현 · 에너지',
+            Earth: '안정 · 균형 · 배려',
+            Metal: '명확 · 절제 · 집중',
+            Water: '직관 · 깊이 · 흐름'
         },
-        elements: ['금', '금', '토', '수', '수', '토', '목', '목', '토', '화', '화', '토'],
-        colors: {
-            목: '푸른',
-            화: '붉은',
-            토: '노란',
-            금: '하얀',
-            수: '검은'
+        colorWords: {
+            Wood: '푸른',
+            Fire: '붉은',
+            Earth: '노란',
+            Metal: '하얀',
+            Water: '검은'
         },
-        animals: ['원숭이', '닭', '개', '돼지', '쥐', '소', '호랑이', '토끼', '용', '뱀', '말', '양']
+        animals: ['쥐', '소', '호랑이', '토끼', '용', '뱀', '말', '양', '원숭이', '닭', '개', '돼지'],
+        stems: ['갑', '을', '병', '정', '무', '기', '경', '신', '임', '계'],
+        stemElements: ['Wood', 'Wood', 'Fire', 'Fire', 'Earth', 'Earth', 'Metal', 'Metal', 'Water', 'Water']
     }
 };
 
@@ -302,25 +326,39 @@ function applyLanguage(lang) {
 
 function getZodiac(year, lang) {
     const data = i18n[lang];
-    const index = year % 12;
-    const animal = data.animals[index];
-    const element = data.elements[index];
-    const color = data.colors[element];
-    return { animal, element, color };
+    const dayIndex = getDayPillarIndex(year, monthInput.value, dayInput.value);
+    const stemIndex = dayIndex % 10;
+    const branchIndex = dayIndex % 12;
+    const animal = data.animals[branchIndex];
+    const elementKey = data.stemElements[stemIndex];
+    const element = data.elementNames[elementKey];
+    const color = data.colorWords[elementKey];
+    return { animal, element, color, elementKey, dayIndex };
 }
 
 function updateResultContent(zodiac, lang) {
     const copy = i18n[lang];
     document.getElementById('animal').innerText = zodiac.animal;
     document.getElementById('element').innerText = zodiac.element;
-    document.getElementById('keywords').innerText = copy.elementKeywords[zodiac.element] || '';
+    document.getElementById('keywords').innerText = copy.elementKeywords[zodiac.elementKey] || '';
 }
 
 function updateDetailLink(year, lang) {
     const detailButton = document.getElementById('detailButton');
-    const cycleIndex = ((year % 60) + 60) % 60;
-    const pageId = String(cycleIndex + 1).padStart(2, '0');
+    const dayIndex = getDayPillarIndex(year, monthInput.value, dayInput.value);
+    const pageId = String(dayIndex + 1).padStart(2, '0');
     detailButton.href = `details/${pageId}.html?lang=${lang}`;
+}
+
+function getDayPillarIndex(yearValue, monthValue, dayValue) {
+    const year = parseInt(yearValue, 10);
+    const month = parseInt(monthValue, 10);
+    const day = parseInt(dayValue, 10);
+    const anchorUTC = Date.UTC(1900, 0, 31);
+    const targetUTC = Date.UTC(year, month - 1, day);
+    const daysSince = Math.floor((targetUTC - anchorUTC) / 86400000);
+    const anchorIndex = 40;
+    return ((daysSince + anchorIndex) % 60 + 60) % 60;
 }
 
 applyLanguage(currentLang);
