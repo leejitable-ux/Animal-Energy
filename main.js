@@ -1,8 +1,8 @@
 const i18n = {
     en: {
-        documentTitle: 'Check Your Zodiac Animal',
-        title: 'Check Your Zodiac Animal',
-        description: 'Enter your birth date to find your zodiac animal.',
+        documentTitle: 'Find Your Ilju (Daily Pillar) Animal',
+        title: 'Find Your Ilju (Daily Pillar) Animal',
+        description: 'Enter your birth date to see your Ilju animal from the 12 earthly animals.',
         labelYear: 'Year',
         labelMonth: 'Month',
         labelDay: 'Day',
@@ -10,9 +10,9 @@ const i18n = {
         placeholderMonth: 'e.g., 7',
         placeholderDay: 'e.g., 14',
         checkButton: 'Check',
-        resultTitle: 'Your zodiac animal is...',
+        resultTitle: 'Your Ilju animal is...',
         invalidDate: 'Please enter a valid date.',
-        animalSentence: 'Your zodiac animal is {animal}.',
+        animalSentence: 'Your Ilju animal is {animal}.',
         animals: ['Monkey', 'Rooster', 'Dog', 'Pig', 'Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat']
     },
     ja: {
