@@ -1,8 +1,8 @@
 const i18n = {
     en: {
-        documentTitle: 'Find Your Ilju (Daily Pillar) Animal',
-        title: 'Find Your Ilju (Daily Pillar) Animal',
-        description: 'Enter your birth date to see your Ilju animal and its elemental energy.',
+        documentTitle: 'Find Your ILJU Animal',
+        title: 'Find Your ILJU Animal',
+        description: 'Enter your birth date to see your ILJU animal and its elemental energy.',
         langLabel: 'Language',
         languageNames: {
             en: 'English',
@@ -19,7 +19,7 @@ const i18n = {
         placeholderTime: 'HH:MM',
         checkButton: 'Check',
         detailButton: 'Learn more',
-        resultTitle: 'Your Ilju animal',
+        resultTitle: 'Your ILJU animal',
         resultAnimalLabel: 'Animal',
         resultElementLabel: 'Element',
         resultKeywordsLabel: 'Keywords',
@@ -28,7 +28,7 @@ const i18n = {
         invalidYear: 'Year must be between 1900 and {maxYear}.',
         invalidMonth: 'Month must be between 1 and 12.',
         invalidDay: 'Please enter a valid day for the selected month and year.',
-        animalSentence: 'Your Ilju animal is {animal}.',
+        animalSentence: 'Your ILJU animal is {animal}.',
         elementSentence: '{color} {animal}, with {element} energy.',
         elementNames: {
             Wood: 'Wood',

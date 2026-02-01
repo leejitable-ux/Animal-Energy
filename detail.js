@@ -1,7 +1,7 @@
 const detailI18n = {
     en: {
-        documentTitle: 'Ilju Detail',
-        title: 'Ilju Detail',
+        documentTitle: 'ILJU Detail',
+        title: 'ILJU Detail',
         subtitle: '{color} {animal} · {element} energy',
         langLabel: 'Language',
         languageNames: {
@@ -12,8 +12,8 @@ const detailI18n = {
         energyTitle: 'Energy',
         animalTitle: 'Animal Traits',
         blendTitle: 'Element × Animal',
-        aboutIljuTitle: 'What is Ilju (Daily Pillar)?',
-        aboutIljuText: 'Ilju is the day pillar in the four pillars system, based on the date of birth.',
+        aboutIljuTitle: 'What is ILJU?',
+        aboutIljuText: 'ILJU is the day pillar in the four pillars system, based on the date of birth.',
         aboutSymbolsTitle: 'What do the animal and element mean?',
         aboutSymbolsText: 'The animal and element are traditional symbols used to describe qualities in a simple, symbolic way.',
         disclaimerTitle: 'Disclaimer',
