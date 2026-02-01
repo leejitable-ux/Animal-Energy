@@ -10,6 +10,7 @@ const i18n = {
         placeholderMonth: 'e.g., 7',
         placeholderDay: 'e.g., 14',
         checkButton: 'Check',
+        detailButton: 'Learn more',
         resultTitle: 'Your Ilju animal is...',
         invalidDate: 'Please enter a valid date.',
         animalSentence: 'Your Ilju animal is {animal}.',
@@ -35,6 +36,7 @@ const i18n = {
         placeholderMonth: '例: 7',
         placeholderDay: '例: 14',
         checkButton: '確認する',
+        detailButton: 'もっと詳しく',
         resultTitle: 'あなたの十二支は...',
         invalidDate: '正しい日付を入力してください。',
         animalSentence: 'あなたの十二支は{animal}です。',
@@ -60,6 +62,7 @@ const i18n = {
         placeholderMonth: '예: 7',
         placeholderDay: '예: 14',
         checkButton: '확인하기',
+        detailButton: '더 알아보기',
         resultTitle: '당신의 일주 동물은...',
         invalidDate: '올바른 날짜를 입력해주세요.',
         animalSentence: '십이지신 중 {animal}입니다.',
@@ -79,6 +82,12 @@ const i18n = {
 const languageSelect = document.getElementById('languageSelect');
 let currentLang = 'en';
 let lastYear = null;
+
+const urlLang = new URLSearchParams(window.location.search).get('lang');
+if (urlLang && i18n[urlLang]) {
+    currentLang = urlLang;
+    languageSelect.value = currentLang;
+}
 
 languageSelect.addEventListener('change', (event) => {
     currentLang = event.target.value;
@@ -102,6 +111,7 @@ document.getElementById('checkButton').addEventListener('click', () => {
         .replace('{color}', zodiac.color)
         .replace('{animal}', zodiac.animal)
         .replace('{element}', zodiac.element);
+    updateDetailLink(year, currentLang);
     document.getElementById('result').classList.remove('hidden');
 });
 
@@ -118,6 +128,7 @@ function applyLanguage(lang) {
     document.getElementById('month').setAttribute('placeholder', copy.placeholderMonth);
     document.getElementById('day').setAttribute('placeholder', copy.placeholderDay);
     document.getElementById('checkButton').innerText = copy.checkButton;
+    document.getElementById('detailButton').innerText = copy.detailButton;
     document.getElementById('resultTitle').innerText = copy.resultTitle;
     document.getElementById('langLabel').innerText = lang === 'ko' ? '언어' : lang === 'ja' ? '言語' : 'Language';
 
@@ -128,6 +139,7 @@ function applyLanguage(lang) {
             .replace('{color}', zodiac.color)
             .replace('{animal}', zodiac.animal)
             .replace('{element}', zodiac.element);
+        updateDetailLink(lastYear, lang);
     }
 }
 
@@ -138,6 +150,13 @@ function getZodiac(year, lang) {
     const element = data.elements[index];
     const color = data.colors[element];
     return { animal, element, color };
+}
+
+function updateDetailLink(year, lang) {
+    const detailButton = document.getElementById('detailButton');
+    const cycleIndex = ((year % 60) + 60) % 60;
+    const pageId = String(cycleIndex + 1).padStart(2, '0');
+    detailButton.href = `details/${pageId}.html?lang=${lang}`;
 }
 
 applyLanguage(currentLang);
