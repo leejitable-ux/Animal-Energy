@@ -3,35 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Ilju (Daily Pillar) Animal</title>
+    <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="lang-switcher">
-        <label for="languageSelect" id="langLabel">Language</label>
-        <select id="languageSelect" aria-label="Language">
-            <option value="en" selected>English</option>
-            <option value="ja">日本語</option>
-            <option value="ko">한국어</option>
+        <label for="languageSelect" id="langLabel"></label>
+        <select id="languageSelect" aria-label="">
+            <option value="en"></option>
+            <option value="ja"></option>
+            <option value="ko"></option>
         </select>
     </div>
     <div class="container">
-        <h1 id="title">Find Your Ilju (Daily Pillar) Animal</h1>
-        <p id="description">Enter your birth date to see your Ilju animal and its elemental energy.</p>
+        <h1 id="title"></h1>
+        <p id="description"></p>
         <div class="input-group">
-            <label for="year" id="labelYear">Year</label>
-            <input type="number" id="year" placeholder="e.g., 1990">
-            <label for="month" id="labelMonth">Month</label>
-            <input type="number" id="month" placeholder="e.g., 7">
-            <label for="day" id="labelDay">Day</label>
-            <input type="number" id="day" placeholder="e.g., 14">
+            <label for="year" id="labelYear"></label>
+            <input type="number" id="year" placeholder="">
+            <label for="month" id="labelMonth"></label>
+            <input type="number" id="month" placeholder="">
+            <label for="day" id="labelDay"></label>
+            <input type="number" id="day" placeholder="">
         </div>
-        <button id="checkButton">Check</button>
-        <div id="result" class="hidden">
-            <h2 id="resultTitle">Your Ilju animal is...</h2>
-            <p id="animal"></p>
-            <p id="element"></p>
-            <a id="detailButton" class="detail-button" href="#">Learn more</a>
+        <p id="errorMessage" class="error-message" role="status" aria-live="polite"></p>
+        <button id="checkButton"></button>
+        <div id="result" class="hidden result-card" role="region" aria-live="polite">
+            <h2 id="resultTitle"></h2>
+            <div class="result-grid">
+                <div class="result-item">
+                    <span id="resultAnimalLabel" class="result-label"></span>
+                    <p id="animal" class="result-value"></p>
+                </div>
+                <div class="result-item">
+                    <span id="resultElementLabel" class="result-label"></span>
+                    <p id="element" class="result-value"></p>
+                </div>
+                <div class="result-item result-keywords">
+                    <span id="resultKeywordsLabel" class="result-label"></span>
+                    <p id="keywords" class="result-value"></p>
+                </div>
+            </div>
+            <div class="result-actions">
+                <a id="detailButton" class="detail-button" href="#"></a>
+                <button id="resetButton" class="reset-button" type="button"></button>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
