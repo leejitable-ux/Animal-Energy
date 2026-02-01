@@ -1,1 +1,61 @@
-/* Add styles here */
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #4682b4; /* SteelBlue */
+}
+
+.input-group {
+    margin: 1rem 0;
+}
+
+label {
+    margin-right: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #5a9bd5; /* A lighter SteelBlue */
+}
+
+#result {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
