@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>일주 동물 확인</title>
+    <title>Check Your Zodiac Animal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="lang-switcher">
+        <label for="languageSelect" id="langLabel">Language</label>
+        <select id="languageSelect" aria-label="Language">
+            <option value="en" selected>English</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+        </select>
+    </div>
     <div class="container">
-        <h1>당신의 일주 동물을 확인해보세요!</h1>
-        <p>생년월일을 입력하면 당신의 일주 동물을 알려드립니다.</p>
+        <h1 id="title">Check Your Zodiac Animal</h1>
+        <p id="description">Enter your birth date to find your zodiac animal.</p>
         <div class="input-group">
-            <label for="year">생년</label>
-            <input type="number" id="year" placeholder="예: 1990">
-            <label for="month">월</label>
-            <input type="number" id="month" placeholder="예: 7">
-            <label for="day">일</label>
-            <input type="number" id="day" placeholder="예: 14">
+            <label for="year" id="labelYear">Year</label>
+            <input type="number" id="year" placeholder="e.g., 1990">
+            <label for="month" id="labelMonth">Month</label>
+            <input type="number" id="month" placeholder="e.g., 7">
+            <label for="day" id="labelDay">Day</label>
+            <input type="number" id="day" placeholder="e.g., 14">
         </div>
-        <button id="checkButton">확인하기</button>
+        <button id="checkButton">Check</button>
         <div id="result" class="hidden">
-            <h2>당신의 일주 동물은...</h2>
+            <h2 id="resultTitle">Your zodiac animal is...</h2>
             <p id="animal"></p>
         </div>
     </div>
