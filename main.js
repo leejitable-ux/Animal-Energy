@@ -12,9 +12,11 @@ const i18n = {
         labelYear: 'Year',
         labelMonth: 'Month',
         labelDay: 'Day',
+        labelTime: 'Time (optional)',
         placeholderYear: 'e.g., 1990',
         placeholderMonth: 'e.g., 7',
         placeholderDay: 'e.g., 14',
+        placeholderTime: 'HH:MM',
         checkButton: 'Check',
         detailButton: 'Learn more',
         resultTitle: 'Your Ilju animal',
@@ -58,9 +60,11 @@ const i18n = {
         labelYear: '年',
         labelMonth: '月',
         labelDay: '日',
+        labelTime: '出生時間（任意）',
         placeholderYear: '例: 1990',
         placeholderMonth: '例: 7',
         placeholderDay: '例: 14',
+        placeholderTime: '時:分',
         checkButton: '確認する',
         detailButton: 'もっと詳しく',
         resultTitle: 'あなたの十二支',
@@ -104,9 +108,11 @@ const i18n = {
         labelYear: '생년',
         labelMonth: '월',
         labelDay: '일',
+        labelTime: '태어난 시간(선택)',
         placeholderYear: '예: 1990',
         placeholderMonth: '예: 7',
         placeholderDay: '예: 14',
+        placeholderTime: '예: 08:30',
         checkButton: '확인하기',
         detailButton: '더 알아보기',
         resultTitle: '당신의 일주 동물',
@@ -144,6 +150,7 @@ const langSwitcher = document.querySelector('.lang-switcher');
 const yearInput = document.getElementById('year');
 const monthInput = document.getElementById('month');
 const dayInput = document.getElementById('day');
+const timeInput = document.getElementById('birthTime');
 const errorMessage = document.getElementById('errorMessage');
 const checkButton = document.getElementById('checkButton');
 const resetButton = document.getElementById('resetButton');
@@ -270,9 +277,11 @@ function applyLanguage(lang) {
     document.getElementById('labelYear').innerText = copy.labelYear;
     document.getElementById('labelMonth').innerText = copy.labelMonth;
     document.getElementById('labelDay').innerText = copy.labelDay;
+    document.getElementById('labelTime').innerText = copy.labelTime;
     document.getElementById('year').setAttribute('placeholder', copy.placeholderYear);
     document.getElementById('month').setAttribute('placeholder', copy.placeholderMonth);
     document.getElementById('day').setAttribute('placeholder', copy.placeholderDay);
+    document.getElementById('birthTime').setAttribute('placeholder', copy.placeholderTime);
     document.getElementById('checkButton').innerText = copy.checkButton;
     document.getElementById('detailButton').innerText = copy.detailButton;
     document.getElementById('resultTitle').innerText = copy.resultTitle;
