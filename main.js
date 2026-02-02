@@ -3,6 +3,60 @@ const i18n = {
         documentTitle: 'Find Your ILJU Animal',
         title: 'Find Your ILJU Animal',
         description: 'Enter your birth date to see your ILJU animal and its elemental energy.',
+        brandName: 'Animal Energy',
+        brandTagline: 'Global ILJU Insight Studio',
+        navOverview: 'Overview',
+        navInsights: 'Insights',
+        navPlans: 'Plans',
+        navSupport: 'Support',
+        loginButton: 'Log in',
+        signupButton: 'Create account',
+        heroEyebrow: 'Professional ILJU Service',
+        heroPrimary: 'Get my reading',
+        heroSecondary: 'View plans',
+        trustItem1: 'Used in 20+ countries',
+        trustItem2: 'Personal dashboard ready',
+        trustItem3: 'Private & secure profile',
+        cardTitle: 'Start your personal reading',
+        cardSubtitle: 'We combine day pillar analysis with five-element balance to deliver a clear, professional summary.',
+        servicesEyebrow: 'What you get',
+        servicesTitle: 'A guided, professional experience',
+        servicesSubtitle: 'Structured insights designed for international users who want clarity, not confusion.',
+        serviceOneTitle: 'Daily pillar overview',
+        serviceOneText: 'Instantly see your ILJU animal, element, and keyword themes in a calm, structured format.',
+        serviceTwoTitle: 'Personal trend dashboard',
+        serviceTwoText: 'Save multiple profiles, compare dates, and track changes over time once you sign in.',
+        serviceThreeTitle: 'Expert-ready reports',
+        serviceThreeText: 'Exportable summaries built for consultations, life planning, and decision support.',
+        plansEyebrow: 'Membership',
+        plansTitle: 'Plans built for global users',
+        plansSubtitle: 'Choose the experience that fits your depth of exploration.',
+        planStarterTitle: 'Starter',
+        planStarterText: 'One-time reading with key themes and summary.',
+        planStarterPrice: '$9',
+        planStarterCta: 'Choose Starter',
+        planProTitle: 'Pro',
+        planProText: 'Unlimited readings, profile history, and exportable reports.',
+        planProPrice: '$19 / month',
+        planProCta: 'Choose Pro',
+        planPlusTitle: 'Plus',
+        planPlusText: 'Includes consultation-ready insights and priority support.',
+        planPlusPrice: '$39 / month',
+        planPlusCta: 'Choose Plus',
+        supportEyebrow: 'Support',
+        supportTitle: 'Guided by clarity',
+        supportSubtitle: 'We support international users with transparent guidance and contextual explanations.',
+        supportOneTitle: 'Multilingual summaries',
+        supportOneText: 'Language-tuned outputs help you share results with family, friends, or advisors.',
+        supportTwoTitle: 'Private profiles',
+        supportTwoText: 'Sign in to keep your readings secure and organized across devices.',
+        footerBrand: 'Animal Energy',
+        footerTagline: 'Global ILJU Insight Studio',
+        footerText: 'A professional, global-first interpretation of ILJU symbols for modern decision-making.',
+        footerLinkOverview: 'Overview',
+        footerLinkInsights: 'Insights',
+        footerLinkPlans: 'Plans',
+        footerLinkSupport: 'Support',
         langLabel: 'Language',
         languageNames: {
             en: 'English',
@@ -59,6 +113,60 @@ const i18n = {
         documentTitle: '十二支を確認',
         title: 'あなたの十二支を確認しましょう',
         description: '生年月日を入力すると、あなたの十二支と気の属性がわかります。',
+        brandName: 'Animal Energy',
+        brandTagline: 'グローバル日柱スタジオ',
+        navOverview: '概要',
+        navInsights: 'インサイト',
+        navPlans: 'プラン',
+        navSupport: 'サポート',
+        loginButton: 'ログイン',
+        signupButton: '会員登録',
+        heroEyebrow: 'プロフェッショナル日柱サービス',
+        heroPrimary: '診断を始める',
+        heroSecondary: 'プランを見る',
+        trustItem1: '20か国以上で利用',
+        trustItem2: '個人ダッシュボード対応',
+        trustItem3: 'プライバシー保護',
+        cardTitle: 'パーソナル診断を開始',
+        cardSubtitle: '日柱分析と五行バランスを組み合わせ、整理された結果を提供します。',
+        servicesEyebrow: '提供内容',
+        servicesTitle: 'わかりやすいプロ体験',
+        servicesSubtitle: '海外ユーザー向けに整理された、明快なインサイトを届けます。',
+        serviceOneTitle: '日柱の概要',
+        serviceOneText: '十二支・五行・キーワードをすぐに確認できます。',
+        serviceTwoTitle: 'パーソナルダッシュボード',
+        serviceTwoText: 'ログイン後は複数プロフィールを保存して比較できます。',
+        serviceThreeTitle: 'レポート出力',
+        serviceThreeText: '相談や計画に活用できる要約レポートを作成します。',
+        plansEyebrow: 'メンバーシップ',
+        plansTitle: 'グローバルユーザー向けプラン',
+        plansSubtitle: '深さに合わせて選べるシンプルな構成。',
+        planStarterTitle: 'スターター',
+        planStarterText: '1回の診断と要約。',
+        planStarterPrice: '$9',
+        planStarterCta: 'スターターを選ぶ',
+        planProTitle: 'プロ',
+        planProText: '無制限の診断と履歴、レポート出力。',
+        planProPrice: '$19 / 月',
+        planProCta: 'プロを選ぶ',
+        planPlusTitle: 'プラス',
+        planPlusText: '相談向けインサイトと優先サポート。',
+        planPlusPrice: '$39 / 月',
+        planPlusCta: 'プラスを選ぶ',
+        supportEyebrow: 'サポート',
+        supportTitle: '明確さを重視',
+        supportSubtitle: '国際ユーザー向けの丁寧な説明とガイド。',
+        supportOneTitle: '多言語サマリー',
+        supportOneText: '家族やパートナーに共有しやすい表現。',
+        supportTwoTitle: 'プライベート管理',
+        supportTwoText: 'ログインして結果を安全に保存できます。',
+        footerBrand: 'Animal Energy',
+        footerTagline: 'グローバル日柱スタジオ',
+        footerText: '現代の意思決定に寄り添う、国際対応のILJU解析。',
+        footerLinkOverview: '概要',
+        footerLinkInsights: 'インサイト',
+        footerLinkPlans: 'プラン',
+        footerLinkSupport: 'サポート',
         langLabel: '言語',
         languageNames: {
             en: '英語',
@@ -115,6 +223,60 @@ const i18n = {
         documentTitle: '일주 동물 확인',
         title: '당신의 일주 동물을 확인해보세요!',
         description: '생년월일을 입력하면 일주 동물과 오행의 기운을 알려드립니다.',
+        brandName: 'Animal Energy',
+        brandTagline: '글로벌 일주 인사이트 스튜디오',
+        navOverview: '개요',
+        navInsights: '인사이트',
+        navPlans: '플랜',
+        navSupport: '지원',
+        loginButton: '로그인',
+        signupButton: '회원가입',
+        heroEyebrow: '프로페셔널 일주 서비스',
+        heroPrimary: '진단 시작',
+        heroSecondary: '플랜 보기',
+        trustItem1: '20개국 이상 사용',
+        trustItem2: '개인 대시보드 제공',
+        trustItem3: '안전한 프로필 보관',
+        cardTitle: '개인 맞춤 진단 시작',
+        cardSubtitle: '일주 분석과 오행 밸런스를 결합해 명확한 결과를 제공합니다.',
+        servicesEyebrow: '제공 서비스',
+        servicesTitle: '정돈된 전문 경험',
+        servicesSubtitle: '해외 사용자도 쉽게 이해할 수 있는 구조화된 인사이트.',
+        serviceOneTitle: '일주 핵심 요약',
+        serviceOneText: '동물, 기운, 키워드를 한 번에 정리합니다.',
+        serviceTwoTitle: '개인 대시보드',
+        serviceTwoText: '로그인 후 여러 프로필 저장과 비교가 가능합니다.',
+        serviceThreeTitle: '전문가용 리포트',
+        serviceThreeText: '상담 및 계획에 활용 가능한 요약 리포트를 제공합니다.',
+        plansEyebrow: '멤버십',
+        plansTitle: '글로벌 사용자용 플랜',
+        plansSubtitle: '필요한 깊이에 맞춘 옵션을 선택하세요.',
+        planStarterTitle: '스타터',
+        planStarterText: '1회 진단과 요약 제공.',
+        planStarterPrice: '$9',
+        planStarterCta: '스타터 선택',
+        planProTitle: '프로',
+        planProText: '무제한 진단, 히스토리, 리포트 제공.',
+        planProPrice: '$19 / 월',
+        planProCta: '프로 선택',
+        planPlusTitle: '플러스',
+        planPlusText: '상담용 인사이트와 우선 지원.',
+        planPlusPrice: '$39 / 월',
+        planPlusCta: '플러스 선택',
+        supportEyebrow: '지원',
+        supportTitle: '명확한 가이드',
+        supportSubtitle: '국제 사용자에게 필요한 설명과 가이드를 제공합니다.',
+        supportOneTitle: '다국어 요약',
+        supportOneText: '가족이나 친구와 공유하기 쉬운 표현.',
+        supportTwoTitle: '안전한 프로필',
+        supportTwoText: '로그인으로 결과를 안전하게 보관합니다.',
+        footerBrand: 'Animal Energy',
+        footerTagline: '글로벌 일주 인사이트 스튜디오',
+        footerText: '현대적 의사결정에 맞춘 글로벌 ILJU 해석 서비스.',
+        footerLinkOverview: '개요',
+        footerLinkInsights: '인사이트',
+        footerLinkPlans: '플랜',
+        footerLinkSupport: '지원',
         langLabel: '언어',
         languageNames: {
             en: '영어',
@@ -293,6 +455,60 @@ function applyLanguage(lang) {
     const copy = i18n[lang];
     document.documentElement.lang = lang;
     document.title = copy.documentTitle;
+    document.getElementById('brandName').innerText = copy.brandName;
+    document.getElementById('brandTagline').innerText = copy.brandTagline;
+    document.getElementById('navOverview').innerText = copy.navOverview;
+    document.getElementById('navInsights').innerText = copy.navInsights;
+    document.getElementById('navPlans').innerText = copy.navPlans;
+    document.getElementById('navSupport').innerText = copy.navSupport;
+    document.getElementById('loginButton').innerText = copy.loginButton;
+    document.getElementById('signupButton').innerText = copy.signupButton;
+    document.getElementById('heroEyebrow').innerText = copy.heroEyebrow;
+    document.getElementById('heroPrimary').innerText = copy.heroPrimary;
+    document.getElementById('heroSecondary').innerText = copy.heroSecondary;
+    document.getElementById('trustItem1').innerText = copy.trustItem1;
+    document.getElementById('trustItem2').innerText = copy.trustItem2;
+    document.getElementById('trustItem3').innerText = copy.trustItem3;
+    document.getElementById('cardTitle').innerText = copy.cardTitle;
+    document.getElementById('cardSubtitle').innerText = copy.cardSubtitle;
+    document.getElementById('servicesEyebrow').innerText = copy.servicesEyebrow;
+    document.getElementById('servicesTitle').innerText = copy.servicesTitle;
+    document.getElementById('servicesSubtitle').innerText = copy.servicesSubtitle;
+    document.getElementById('serviceOneTitle').innerText = copy.serviceOneTitle;
+    document.getElementById('serviceOneText').innerText = copy.serviceOneText;
+    document.getElementById('serviceTwoTitle').innerText = copy.serviceTwoTitle;
+    document.getElementById('serviceTwoText').innerText = copy.serviceTwoText;
+    document.getElementById('serviceThreeTitle').innerText = copy.serviceThreeTitle;
+    document.getElementById('serviceThreeText').innerText = copy.serviceThreeText;
+    document.getElementById('plansEyebrow').innerText = copy.plansEyebrow;
+    document.getElementById('plansTitle').innerText = copy.plansTitle;
+    document.getElementById('plansSubtitle').innerText = copy.plansSubtitle;
+    document.getElementById('planStarterTitle').innerText = copy.planStarterTitle;
+    document.getElementById('planStarterText').innerText = copy.planStarterText;
+    document.getElementById('planStarterPrice').innerText = copy.planStarterPrice;
+    document.getElementById('planStarterCta').innerText = copy.planStarterCta;
+    document.getElementById('planProTitle').innerText = copy.planProTitle;
+    document.getElementById('planProText').innerText = copy.planProText;
+    document.getElementById('planProPrice').innerText = copy.planProPrice;
+    document.getElementById('planProCta').innerText = copy.planProCta;
+    document.getElementById('planPlusTitle').innerText = copy.planPlusTitle;
+    document.getElementById('planPlusText').innerText = copy.planPlusText;
+    document.getElementById('planPlusPrice').innerText = copy.planPlusPrice;
+    document.getElementById('planPlusCta').innerText = copy.planPlusCta;
+    document.getElementById('supportEyebrow').innerText = copy.supportEyebrow;
+    document.getElementById('supportTitle').innerText = copy.supportTitle;
+    document.getElementById('supportSubtitle').innerText = copy.supportSubtitle;
+    document.getElementById('supportOneTitle').innerText = copy.supportOneTitle;
+    document.getElementById('supportOneText').innerText = copy.supportOneText;
+    document.getElementById('supportTwoTitle').innerText = copy.supportTwoTitle;
+    document.getElementById('supportTwoText').innerText = copy.supportTwoText;
+    document.getElementById('footerBrand').innerText = copy.footerBrand;
+    document.getElementById('footerTagline').innerText = copy.footerTagline;
+    document.getElementById('footerText').innerText = copy.footerText;
+    document.getElementById('footerLinkOverview').innerText = copy.footerLinkOverview;
+    document.getElementById('footerLinkInsights').innerText = copy.footerLinkInsights;
+    document.getElementById('footerLinkPlans').innerText = copy.footerLinkPlans;
+    document.getElementById('footerLinkSupport').innerText = copy.footerLinkSupport;
     document.getElementById('title').innerText = copy.title;
     document.getElementById('description').innerText = copy.description;
     document.getElementById('langLabel').innerText = copy.langLabel;
