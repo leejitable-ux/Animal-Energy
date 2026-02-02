@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="support">
+    <div class="lang-switcher">
+        <label for="languageSelect" id="langLabel"></label>
+        <select id="languageSelect" aria-label="">
+            <option value="en"></option>
+            <option value="ja"></option>
+            <option value="ko"></option>
+        </select>
+    </div>
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-mark">AE</div>
+            <div class="brand-text">
+                <span id="brandName" class="brand-name"></span>
+                <span id="brandTagline" class="brand-tagline"></span>
+            </div>
+        </div>
+        <nav class="site-nav">
+            <a class="nav-link" href="overview.html" id="navOverview"></a>
+            <a class="nav-link" href="insights.html" id="navInsights"></a>
+            <a class="nav-link" href="plans.html" id="navPlans"></a>
+            <a class="nav-link" href="support.html" id="navSupport"></a>
+        </nav>
+        <div class="auth-actions">
+            <button class="ghost-button" id="loginButton" type="button"></button>
+            <button class="solid-button" id="signupButton" type="button"></button>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page-hero">
+            <div class="hero-copy">
+                <span id="pageEyebrow" class="eyebrow"></span>
+                <h1 id="pageTitle"></h1>
+                <p id="pageSubtitle"></p>
+                <div class="hero-actions">
+                    <a id="primaryCta" class="solid-button" href="support.html" data-link="support.html"></a>
+                    <a id="secondaryCta" class="ghost-link" href="overview.html" data-link="overview.html"></a>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="panel-card">
+                    <h3 id="heroPanelTitle"></h3>
+                    <p id="heroPanelText"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2 id="sectionOneTitle"></h2>
+            </div>
+            <div class="card-grid">
+                <article class="info-card">
+                    <h3 id="supportCardOneTitle"></h3>
+                    <p id="supportCardOneText"></p>
+                </article>
+                <article class="info-card">
+                    <h3 id="supportCardTwoTitle"></h3>
+                    <p id="supportCardTwoText"></p>
+                </article>
+                <article class="info-card">
+                    <h3 id="supportCardThreeTitle"></h3>
+                    <p id="supportCardThreeText"></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section alt">
+            <div class="section-heading">
+                <h2 id="sectionTwoTitle"></h2>
+            </div>
+            <div class="faq-grid">
+                <article class="support-card">
+                    <h3 id="faqOneTitle"></h3>
+                    <p id="faqOneText"></p>
+                </article>
+                <article class="support-card">
+                    <h3 id="faqTwoTitle"></h3>
+                    <p id="faqTwoText"></p>
+                </article>
+                <article class="support-card">
+                    <h3 id="faqThreeTitle"></h3>
+                    <p id="faqThreeText"></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <div class="brand footer-brand">
+                <div class="brand-mark">AE</div>
+                <div class="brand-text">
+                    <span id="footerBrand"></span>
+                    <span id="footerTagline"></span>
+                </div>
+            </div>
+            <p id="footerText"></p>
+        </div>
+        <div class="footer-links">
+            <a href="overview.html" id="footerLinkOverview"></a>
+            <a href="insights.html" id="footerLinkInsights"></a>
+            <a href="plans.html" id="footerLinkPlans"></a>
+            <a href="support.html" id="footerLinkSupport"></a>
+        </div>
+    </footer>
+    <script src="page.js"></script>
+</body>
+</html>

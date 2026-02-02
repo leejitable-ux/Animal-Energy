@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="plans">
+    <div class="lang-switcher">
+        <label for="languageSelect" id="langLabel"></label>
+        <select id="languageSelect" aria-label="">
+            <option value="en"></option>
+            <option value="ja"></option>
+            <option value="ko"></option>
+        </select>
+    </div>
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-mark">AE</div>
+            <div class="brand-text">
+                <span id="brandName" class="brand-name"></span>
+                <span id="brandTagline" class="brand-tagline"></span>
+            </div>
+        </div>
+        <nav class="site-nav">
+            <a class="nav-link" href="overview.html" id="navOverview"></a>
+            <a class="nav-link" href="insights.html" id="navInsights"></a>
+            <a class="nav-link" href="plans.html" id="navPlans"></a>
+            <a class="nav-link" href="support.html" id="navSupport"></a>
+        </nav>
+        <div class="auth-actions">
+            <button class="ghost-button" id="loginButton" type="button"></button>
+            <button class="solid-button" id="signupButton" type="button"></button>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page-hero">
+            <div class="hero-copy">
+                <span id="pageEyebrow" class="eyebrow"></span>
+                <h1 id="pageTitle"></h1>
+                <p id="pageSubtitle"></p>
+                <div class="hero-actions">
+                    <a id="primaryCta" class="solid-button" href="index.html" data-link="index.html"></a>
+                    <a id="secondaryCta" class="ghost-link" href="plans.html" data-link="plans.html"></a>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="panel-card">
+                    <h3 id="heroPanelTitle"></h3>
+                    <p id="heroPanelText"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2 id="sectionOneTitle"></h2>
+            </div>
+            <div class="plan-grid">
+                <article class="plan-card">
+                    <h3 id="planStarterTitle"></h3>
+                    <p id="planStarterText"></p>
+                    <div class="plan-price" id="planStarterPrice"></div>
+                    <div class="plan-features">
+                        <p id="planStarterFeature1"></p>
+                        <p id="planStarterFeature2"></p>
+                        <p id="planStarterFeature3"></p>
+                    </div>
+                    <button class="ghost-button" id="planStarterCta" type="button"></button>
+                </article>
+                <article class="plan-card featured">
+                    <h3 id="planProTitle"></h3>
+                    <p id="planProText"></p>
+                    <div class="plan-price" id="planProPrice"></div>
+                    <div class="plan-features">
+                        <p id="planProFeature1"></p>
+                        <p id="planProFeature2"></p>
+                        <p id="planProFeature3"></p>
+                    </div>
+                    <button class="solid-button" id="planProCta" type="button"></button>
+                </article>
+                <article class="plan-card">
+                    <h3 id="planPlusTitle"></h3>
+                    <p id="planPlusText"></p>
+                    <div class="plan-price" id="planPlusPrice"></div>
+                    <div class="plan-features">
+                        <p id="planPlusFeature1"></p>
+                        <p id="planPlusFeature2"></p>
+                        <p id="planPlusFeature3"></p>
+                    </div>
+                    <button class="ghost-button" id="planPlusCta" type="button"></button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <div class="brand footer-brand">
+                <div class="brand-mark">AE</div>
+                <div class="brand-text">
+                    <span id="footerBrand"></span>
+                    <span id="footerTagline"></span>
+                </div>
+            </div>
+            <p id="footerText"></p>
+        </div>
+        <div class="footer-links">
+            <a href="overview.html" id="footerLinkOverview"></a>
+            <a href="insights.html" id="footerLinkInsights"></a>
+            <a href="plans.html" id="footerLinkPlans"></a>
+            <a href="support.html" id="footerLinkSupport"></a>
+        </div>
+    </footer>
+    <script src="page.js"></script>
+</body>
+</html>
