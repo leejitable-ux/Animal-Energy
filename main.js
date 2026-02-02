@@ -179,9 +179,9 @@ const errorMessage = document.getElementById('errorMessage');
 const checkButton = document.getElementById('checkButton');
 const resetButton = document.getElementById('resetButton');
 const resultImage = document.getElementById('resultImage');
+const resultImageSlot = document.getElementById('resultImageSlot');
 let currentLang = 'en';
 let lastYear = null;
-const fallbackImageUrl = 'images/갑진.png';
 
 const urlLang = new URLSearchParams(window.location.search).get('lang');
 const savedLang = sessionStorage.getItem('lang');
@@ -344,7 +344,18 @@ function updateResultContent(zodiac, lang) {
     document.getElementById('animal').innerText = zodiac.animal;
     document.getElementById('element').innerText = zodiac.element;
     document.getElementById('keywords').innerText = copy.elementKeywords[zodiac.elementKey] || '';
-    resultImage.src = fallbackImageUrl;
+    setResultImage('');
+}
+
+function setResultImage(src) {
+    if (!src) {
+        resultImage.removeAttribute('src');
+        resultImageSlot.classList.add('is-empty');
+        return;
+    }
+
+    resultImage.src = src;
+    resultImageSlot.classList.remove('is-empty');
 }
 
 function updateDetailLink(year, lang) {
