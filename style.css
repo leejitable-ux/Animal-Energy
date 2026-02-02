@@ -5,8 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100svh;
     margin: 0;
+    padding: 96px 20px 32px;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -79,7 +81,7 @@ body {
 
 .container {
     background-color: white;
-    padding: 2rem;
+    padding: clamp(1.25rem, 4vw, 2rem);
     border-radius: 24px;
     box-shadow: 0 14px 24px rgba(120, 170, 220, 0.18);
     border: 2px solid #eaf3ff;
@@ -286,8 +288,34 @@ button:disabled {
 }
 
 @media (max-width: 520px) {
+    body {
+        align-items: flex-start;
+        padding: 84px 16px 24px;
+    }
+
+    .lang-switcher {
+        left: 12px;
+        right: 12px;
+        justify-content: space-between;
+    }
+
     .result-grid {
         grid-template-columns: 1fr;
+    }
+
+    .result-actions {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    button,
+    .detail-button {
+        font-size: 1rem;
+    }
+
+    .detail-section {
+        padding: 0.85rem;
     }
 }
 
