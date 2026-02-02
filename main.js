@@ -178,8 +178,10 @@ const timeInput = document.getElementById('birthTime');
 const errorMessage = document.getElementById('errorMessage');
 const checkButton = document.getElementById('checkButton');
 const resetButton = document.getElementById('resetButton');
+const resultImage = document.getElementById('resultImage');
 let currentLang = 'en';
 let lastYear = null;
+const fallbackImageUrl = 'images/갑진.png';
 
 const urlLang = new URLSearchParams(window.location.search).get('lang');
 const savedLang = sessionStorage.getItem('lang');
@@ -313,6 +315,7 @@ function applyLanguage(lang) {
     document.getElementById('resultElementLabel').innerText = copy.resultElementLabel;
     document.getElementById('resultKeywordsLabel').innerText = copy.resultKeywordsLabel;
     document.getElementById('resetButton').innerText = copy.resetButton;
+    resultImage.alt = copy.resultTitle;
     langSwitcher.setAttribute('data-lang', lang);
 
     if (lastYear !== null && !document.getElementById('result').classList.contains('hidden')) {
@@ -341,6 +344,7 @@ function updateResultContent(zodiac, lang) {
     document.getElementById('animal').innerText = zodiac.animal;
     document.getElementById('element').innerText = zodiac.element;
     document.getElementById('keywords').innerText = copy.elementKeywords[zodiac.elementKey] || '';
+    resultImage.src = fallbackImageUrl;
 }
 
 function updateDetailLink(year, lang) {
