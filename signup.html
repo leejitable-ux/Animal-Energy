@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overview</title>
+    <title>Create account</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-doc" data-page="overview">
+<body class="page-doc auth-page" data-page="signup">
     <div class="lang-switcher">
         <label for="languageSelect" id="langLabel"></label>
         <select id="languageSelect" aria-label="">
@@ -37,35 +37,35 @@
 
     <main class="page">
         <div class="page-label" id="pageLabel"></div>
-
-        <section class="doc-hero section-block">
-            <h1 id="heroTitle"></h1>
-            <p id="heroText"></p>
-        </section>
-
-        <section class="section-block">
-            <h2 id="whatTitle"></h2>
-            <p id="whatText"></p>
-        </section>
-
-        <section class="section-block alt-block">
-            <h2 id="whyTitle"></h2>
-            <p id="whyText"></p>
-        </section>
-
-        <section class="section-block">
-            <h2 id="getTitle"></h2>
-            <ul class="feature-list compact">
-                <li id="getItem1"></li>
-                <li id="getItem2"></li>
-                <li id="getItem3"></li>
-                <li id="getItem4"></li>
-            </ul>
-        </section>
-
-        <section class="section-block trust-block">
-            <h2 id="trustTitle"></h2>
-            <p id="trustText"></p>
+        <section class="section-block auth-card">
+            <h1 id="authTitle"></h1>
+            <p id="authSubtitle"></p>
+            <form class="auth-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="signupName" id="nameLabel"></label>
+                    <input id="signupName" name="name" type="text" placeholder="Your name" required>
+                </div>
+                <div class="form-row">
+                    <label for="signupEmail" id="emailLabel"></label>
+                    <input id="signupEmail" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="signupPassword" id="passwordLabel"></label>
+                    <input id="signupPassword" name="password" type="password" placeholder="••••••••" required>
+                </div>
+                <div class="form-row">
+                    <label for="signupConfirm" id="confirmLabel"></label>
+                    <input id="signupConfirm" name="confirm" type="password" placeholder="••••••••" required>
+                </div>
+                <div class="form-row inline">
+                    <label class="checkbox">
+                        <input type="checkbox" name="terms">
+                        <span id="termsLabel"></span>
+                    </label>
+                </div>
+                <button class="solid-button" type="button" id="authPrimary"></button>
+                <p class="helper-text" id="authNote"></p>
+            </form>
         </section>
     </main>
 

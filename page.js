@@ -61,6 +61,29 @@ const i18n = {
                 disclaimerTitle: 'Disclaimer',
                 disclaimerText: 'This insight is intended for reflection and entertainment, not as a tool for making major life decisions.'
             },
+            login: {
+                pageLabel: 'Log in',
+                authTitle: 'Welcome back',
+                authSubtitle: 'Access your saved readings and personal dashboard.',
+                emailLabel: 'Email',
+                passwordLabel: 'Password',
+                rememberLabel: 'Keep me signed in',
+                forgotText: 'Forgot password support is coming soon.',
+                authPrimary: 'Log in',
+                authNote: 'This is a preview UI. Authentication will be connected soon.'
+            },
+            signup: {
+                pageLabel: 'Create account',
+                authTitle: 'Create your account',
+                authSubtitle: 'Save readings, track profiles, and return to your insights anytime.',
+                nameLabel: 'Full name',
+                emailLabel: 'Email',
+                passwordLabel: 'Password',
+                confirmLabel: 'Confirm password',
+                termsLabel: 'I agree to the terms and privacy policy',
+                authPrimary: 'Create account',
+                authNote: 'This is a preview UI. Authentication will be connected soon.'
+            },
             plans: {
                 pageEyebrow: 'Plans',
                 pageTitle: 'Choose a plan that matches your depth',
@@ -179,6 +202,29 @@ const i18n = {
                 disclaimerTitle: '免責事項',
                 disclaimerText: 'このインサイトは内省や娯楽のためのものであり、重要な判断の道具ではありません。'
             },
+            login: {
+                pageLabel: 'ログイン',
+                authTitle: 'おかえりなさい',
+                authSubtitle: '保存したリーディングとダッシュボードにアクセスします。',
+                emailLabel: 'メールアドレス',
+                passwordLabel: 'パスワード',
+                rememberLabel: 'ログイン状態を保持',
+                forgotText: 'パスワード再設定は準備中です。',
+                authPrimary: 'ログイン',
+                authNote: '現在はUIプレビューです。認証は後日接続します。'
+            },
+            signup: {
+                pageLabel: 'アカウント作成',
+                authTitle: 'アカウントを作成',
+                authSubtitle: '診断履歴を保存し、いつでもインサイトを確認できます。',
+                nameLabel: '氏名',
+                emailLabel: 'メールアドレス',
+                passwordLabel: 'パスワード',
+                confirmLabel: 'パスワード確認',
+                termsLabel: '利用規約とプライバシーに同意します',
+                authPrimary: 'アカウント作成',
+                authNote: '現在はUIプレビューです。認証は後日接続します。'
+            },
             plans: {
                 pageEyebrow: 'プラン',
                 pageTitle: '深さに合わせて選ぶ',
@@ -296,6 +342,29 @@ const i18n = {
                 culturalText: 'Saju는 전통 시스템입니다. 우리는 문화적 인사이트와 성격 프레임으로서 구조와 맥락을 강조합니다.',
                 disclaimerTitle: '면책 사항',
                 disclaimerText: '이 인사이트는 성찰과 엔터테인먼트를 위한 것으로, 중요한 결정을 위한 도구가 아닙니다.'
+            },
+            login: {
+                pageLabel: '로그인',
+                authTitle: '다시 오신 것을 환영합니다',
+                authSubtitle: '저장된 리딩과 개인 대시보드에 접근합니다.',
+                emailLabel: '이메일',
+                passwordLabel: '비밀번호',
+                rememberLabel: '로그인 상태 유지',
+                forgotText: '비밀번호 재설정은 준비 중입니다.',
+                authPrimary: '로그인',
+                authNote: '현재는 UI 미리보기입니다. 인증은 추후 연결됩니다.'
+            },
+            signup: {
+                pageLabel: '회원가입',
+                authTitle: '계정 만들기',
+                authSubtitle: '리딩을 저장하고 언제든 인사이트를 확인하세요.',
+                nameLabel: '이름',
+                emailLabel: '이메일',
+                passwordLabel: '비밀번호',
+                confirmLabel: '비밀번호 확인',
+                termsLabel: '이용약관 및 개인정보 처리방침에 동의합니다',
+                authPrimary: '회원가입',
+                authNote: '현재는 UI 미리보기입니다. 인증은 추후 연결됩니다.'
             },
             plans: {
                 pageEyebrow: '플랜',
