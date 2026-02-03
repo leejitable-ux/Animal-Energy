@@ -26,7 +26,7 @@
         <nav class="site-nav">
             <a class="nav-link" href="overview.html" id="navOverview"></a>
             <a class="nav-link" href="insights.html" id="navInsights"></a>
-            <a class="nav-link" href="plans.html" id="navPlans"></a>
+            <a class="nav-link is-hidden" href="plans.html" id="navPlans"></a>
             <a class="nav-link" href="support.html" id="navSupport"></a>
         </nav>
         <div class="auth-actions">
@@ -43,7 +43,7 @@
                 <p id="description"></p>
                 <div class="hero-actions">
                     <button id="heroPrimary" class="solid-button" type="button"></button>
-                    <a id="heroSecondary" class="ghost-link" href="plans.html"></a>
+                    <a id="heroSecondary" class="ghost-link is-hidden" href="plans.html"></a>
                 </div>
                 <div class="trust-row">
                     <div class="trust-card" id="trustItem1"></div>
@@ -99,6 +99,7 @@
                             <p id="keywords" class="result-value"></p>
                         </div>
                     </div>
+                    <p id="resultSummary" class="result-summary"></p>
                     <div class="result-actions">
                         <a id="detailButton" class="detail-button" href="#"></a>
                         <button id="resetButton" class="reset-button" type="button"></button>
@@ -129,7 +130,7 @@
             </div>
         </section>
 
-        <section class="section alt" id="plans">
+        <section class="section alt is-hidden" id="plans">
             <div class="section-heading">
                 <span id="plansEyebrow" class="eyebrow"></span>
                 <h2 id="plansTitle"></h2>
@@ -190,7 +191,7 @@
         <div class="footer-links">
             <a href="overview.html" id="footerLinkOverview"></a>
             <a href="insights.html" id="footerLinkInsights"></a>
-            <a href="plans.html" id="footerLinkPlans"></a>
+            <a href="plans.html" id="footerLinkPlans" class="is-hidden"></a>
             <a href="support.html" id="footerLinkSupport"></a>
         </div>
     </footer>

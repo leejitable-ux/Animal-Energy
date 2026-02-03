@@ -77,6 +77,7 @@ const i18n = {
         resultAnimalLabel: 'Animal',
         resultElementLabel: 'Element',
         resultKeywordsLabel: 'Keywords',
+        resultSummaryTemplate: 'Base nature: {animalTrait}. Relationships: {relationTip}. Work/study: {workTip}. Money: {moneyTip}. Life phases — Early: {earlyLife}. Mid: {midLife}. Later: {lateLife}.',
         resetButton: 'Try another date',
         invalidDate: 'Please enter a valid date.',
         invalidYear: 'Year must be between 1900 and {maxYear}.',
@@ -97,6 +98,81 @@ const i18n = {
             Earth: 'balance · reliability · care',
             Metal: 'clarity · focus · discipline',
             Water: 'intuition · depth · flow'
+        },
+        animalTraits: {
+            Rat: 'quick-witted and resourceful',
+            Ox: 'steady and dependable',
+            Tiger: 'bold and self-driven',
+            Rabbit: 'thoughtful and diplomatic',
+            Dragon: 'confident and magnetic',
+            Snake: 'strategic and intuitive',
+            Horse: 'energetic and freedom-loving',
+            Goat: 'warm and creative',
+            Monkey: 'clever and adaptable',
+            Rooster: 'direct and organized',
+            Dog: 'loyal and fair-minded',
+            Pig: 'kind and generous'
+        },
+        elementAdvice: {
+            Wood: {
+                relation: 'lead with patience and let warmth grow',
+                work: 'build steady progress instead of big jumps',
+                money: 'invest in skills and long-term plans'
+            },
+            Fire: {
+                relation: 'express yourself clearly to open the flow',
+                work: 'move fast, but avoid overcommitment',
+                money: 'watch impulse spending'
+            },
+            Earth: {
+                relation: 'listening and steadiness build trust',
+                work: 'stay consistent and follow through',
+                money: 'budgeting brings calm gains'
+            },
+            Metal: {
+                relation: 'clear boundaries improve harmony',
+                work: 'prioritize precision and structure',
+                money: 'cut leaks and simplify'
+            },
+            Water: {
+                relation: 'give space and observe before acting',
+                work: 'deep focus on one task pays off',
+                money: 'keep a flexible cushion'
+            }
+        },
+        elementLife: {
+            Wood: {
+                early: 'a curious start with steady growth and skill-building',
+                mid: 'expansion through consistent routines and collaborations',
+                late: 'stability from long-term investments and mentoring'
+            },
+            Fire: {
+                early: 'strong momentum and bold choices',
+                mid: 'visibility and leadership, with a need to manage pace',
+                late: 'creative influence and selective commitments'
+            },
+            Earth: {
+                early: 'a grounded base built through responsibility',
+                mid: 'reliable progress and steady recognition',
+                late: 'security from patience and careful planning'
+            },
+            Metal: {
+                early: 'clear standards and fast learning through structure',
+                mid: 'refined expertise and reputation for precision',
+                late: 'focused legacy built on discipline'
+            },
+            Water: {
+                early: 'deep observation and adaptable learning',
+                mid: 'strategic shifts and resilient growth',
+                late: 'calm stability and wisdom sharing'
+            }
+        },
+        elementLifeLabels: {
+            Wood: 'growth and steady expansion',
+            Fire: 'momentum and visibility',
+            Earth: 'stability and responsibility',
+            Metal: 'structure and refinement',
+            Water: 'adaptability and depth'
         },
         colorWords: {
             Wood: 'Blue-Green',
@@ -187,6 +263,7 @@ const i18n = {
         resultAnimalLabel: '動物',
         resultElementLabel: '気',
         resultKeywordsLabel: 'キーワード',
+        resultSummaryTemplate: '本質: {animalTrait}。人間関係: {relationTip}。仕事・学び: {workTip}。金運: {moneyTip}。人生の流れ — 初年: {earlyLife}。中年: {midLife}。晩年: {lateLife}。',
         resetButton: '別の日付を試す',
         invalidDate: '正しい日付を入力してください。',
         invalidYear: '年は1900〜{maxYear}の範囲で入力してください。',
@@ -207,6 +284,81 @@ const i18n = {
             Earth: '安定・安心・包容',
             Metal: '明晰・規律・芯の強さ',
             Water: '直感・深み・適応'
+        },
+        animalTraits: {
+            鼠: '機転が利き、情報収集が得意',
+            牛: '粘り強く、信頼されやすい',
+            虎: '行動力があり、芯が強い',
+            兎: '穏やかで調整役が上手',
+            龍: '存在感があり、挑戦的',
+            蛇: '直感的で、計画性がある',
+            馬: 'エネルギッシュで自由志向',
+            羊: '温かく、感性が豊か',
+            猿: '柔軟で発想力がある',
+            鶏: '率直で整理が得意',
+            犬: '誠実で守りが堅い',
+            猪: '寛大で人当たりが良い'
+        },
+        elementAdvice: {
+            Wood: {
+                relation: 'ゆっくり信頼を育てると良い',
+                work: '段階的に積み上げる',
+                money: '長期の備えが吉'
+            },
+            Fire: {
+                relation: '気持ちを言葉にすると流れが良い',
+                work: 'スピード感を活かすが無理は禁物',
+                money: '衝動買いに注意'
+            },
+            Earth: {
+                relation: '安心感を与える態度が鍵',
+                work: '継続力を意識',
+                money: '計画的な管理で安定'
+            },
+            Metal: {
+                relation: '境界線を明確にすると楽',
+                work: '精度と整理で成果',
+                money: '無駄を削ると伸びる'
+            },
+            Water: {
+                relation: '距離感を調整して観察',
+                work: '一点集中で深掘り',
+                money: '余裕資金を確保'
+            }
+        },
+        elementLife: {
+            Wood: {
+                early: '好奇心が強く、基礎づくりが進む',
+                mid: '積み上げ型で広がりが出る',
+                late: '長期の備えが安定につながる'
+            },
+            Fire: {
+                early: '勢いがあり、挑戦が多い',
+                mid: '注目や役割が増えやすい',
+                late: '創造性を活かして選択が洗練される'
+            },
+            Earth: {
+                early: '責任を引き受けて土台を作る',
+                mid: '堅実に評価が積み上がる',
+                late: '忍耐の積み重ねが安心を生む'
+            },
+            Metal: {
+                early: '基準が明確で伸びやすい',
+                mid: '専門性が磨かれ信頼が高まる',
+                late: '規律が落ち着いた強みになる'
+            },
+            Water: {
+                early: '観察力で柔軟に学ぶ',
+                mid: '戦略的な転換が活きる',
+                late: '穏やかな安定と知恵の共有'
+            }
+        },
+        elementLifeLabels: {
+            Wood: '成長と拡大',
+            Fire: '勢いと注目',
+            Earth: '安定と責任',
+            Metal: '整理と洗練',
+            Water: '柔軟さと深み'
         },
         colorWords: {
             Wood: '青',
@@ -297,6 +449,7 @@ const i18n = {
         resultAnimalLabel: '동물',
         resultElementLabel: '기운',
         resultKeywordsLabel: '키워드',
+        resultSummaryTemplate: '기본 기질은 {animalTrait}. 관계에서는 {relationTip} 흐름, 일/학업에서는 {workTip} 흐름, 금전에서는 {moneyTip} 포인트가 두드러져요. 인생 흐름은 초년기 {earlyLife}, 중년기 {midLife}, 노년기 {lateLife} 쪽으로 나타나기 쉽습니다.',
         resetButton: '다른 날짜로 다시하기',
         invalidDate: '올바른 날짜를 입력해주세요.',
         invalidYear: '연도는 1900년부터 {maxYear}년까지 입력해주세요.',
@@ -317,6 +470,81 @@ const i18n = {
             Earth: '안정 · 균형 · 배려',
             Metal: '명확 · 절제 · 집중',
             Water: '직관 · 깊이 · 흐름'
+        },
+        animalTraits: {
+            쥐: '눈치가 빠르고 정보에 강한 타입',
+            소: '꾸준하고 믿음직한 타입',
+            호랑이: '대담하고 추진력이 강한 타입',
+            토끼: '온화하고 조율을 잘하는 타입',
+            용: '존재감이 크고 도전적인 타입',
+            뱀: '직관적이고 전략적인 타입',
+            말: '에너지 넘치고 자유로운 타입',
+            양: '따뜻하고 감성이 풍부한 타입',
+            원숭이: '유연하고 아이디어가 많은 타입',
+            닭: '분명하고 정리정돈이 좋은 타입',
+            개: '성실하고 책임감이 강한 타입',
+            돼지: '너그럽고 인간관계가 좋은 타입'
+        },
+        elementAdvice: {
+            Wood: {
+                relation: '천천히 신뢰를 쌓는',
+                work: '단계적으로 확장하는',
+                money: '장기 계획을 세우는'
+            },
+            Fire: {
+                relation: '감정을 솔직히 표현하는',
+                work: '속도를 살리되 과로를 피하는',
+                money: '충동 지출을 줄이는'
+            },
+            Earth: {
+                relation: '안정감을 주는',
+                work: '꾸준함을 유지하는',
+                money: '지출을 정리해 균형을 맞추는'
+            },
+            Metal: {
+                relation: '선과 경계를 분명히 하는',
+                work: '정확도와 구조를 다지는',
+                money: '불필요한 새는 돈을 막는'
+            },
+            Water: {
+                relation: '거리감을 조절하며 관찰하는',
+                work: '한 가지에 깊게 파고드는',
+                money: '유동자금을 확보하는'
+            }
+        },
+        elementLife: {
+            Wood: {
+                early: '호기심과 성장 중심으로 기반을 다지는',
+                mid: '꾸준함으로 확장되는',
+                late: '장기 투자와 멘토링이 안정이 되는'
+            },
+            Fire: {
+                early: '속도감 있는 도전이 많은',
+                mid: '주목과 리더십이 늘어나는',
+                late: '창의성을 살려 선택이 정교해지는'
+            },
+            Earth: {
+                early: '책임을 맡으며 토대를 쌓는',
+                mid: '신뢰와 평판이 누적되는',
+                late: '인내의 결실로 안정되는'
+            },
+            Metal: {
+                early: '기준이 분명하고 성장 속도가 빠른',
+                mid: '전문성이 깊어져 신뢰가 쌓이는',
+                late: '규율이 강점으로 굳어지는'
+            },
+            Water: {
+                early: '관찰력으로 유연하게 배우는',
+                mid: '전략적 전환이 빛을 보는',
+                late: '차분한 안정과 지혜가 커지는'
+            }
+        },
+        elementLifeLabels: {
+            Wood: '성장과 확장',
+            Fire: '속도와 주목',
+            Earth: '안정과 책임',
+            Metal: '정리와 정교함',
+            Water: '유연함과 깊이'
         },
         colorWords: {
             Wood: '푸른',
@@ -552,7 +780,22 @@ function getZodiac(year, lang) {
     const elementKey = data.stemElements[stemIndex];
     const element = data.elementNames[elementKey];
     const color = data.colorWords[elementKey];
-    return { animal, element, color, elementKey, dayIndex };
+    const yearIndex = getYearPillarIndex(year);
+    const monthIndex = getMonthPillarIndex(year, monthInput.value);
+    const timeIndex = getTimePillarIndex(dayIndex, timeInput?.value || '');
+    const yearElementKey = data.stemElements[yearIndex % 10];
+    const monthElementKey = data.stemElements[monthIndex % 10];
+    const timeElementKey = timeIndex !== null ? data.stemElements[timeIndex % 10] : null;
+    return {
+        animal,
+        element,
+        color,
+        elementKey,
+        dayIndex,
+        yearElementKey,
+        monthElementKey,
+        timeElementKey
+    };
 }
 
 function updateResultContent(zodiac, lang) {
@@ -560,7 +803,33 @@ function updateResultContent(zodiac, lang) {
     document.getElementById('animal').innerText = zodiac.animal;
     document.getElementById('element').innerText = zodiac.element;
     document.getElementById('keywords').innerText = copy.elementKeywords[zodiac.elementKey] || '';
+    document.getElementById('resultSummary').innerText = buildResultSummary(zodiac, lang);
     setResultImage('');
+}
+
+function buildResultSummary(zodiac, lang) {
+    const copy = i18n[lang];
+    const template = copy.resultSummaryTemplate;
+    if (!template) {
+        return '';
+    }
+
+    const animalTrait = copy.animalTraits?.[zodiac.animal] || '';
+    const advice = copy.elementAdvice?.[zodiac.elementKey] || {};
+    const yearElement = zodiac.yearElementKey || zodiac.elementKey;
+    const monthElement = zodiac.monthElementKey || zodiac.elementKey;
+    const timeElement = zodiac.timeElementKey || zodiac.elementKey;
+    const earlyLife = copy.elementLifeLabels?.[yearElement] || copy.elementLife?.[yearElement]?.early || '';
+    const midLife = copy.elementLifeLabels?.[monthElement] || copy.elementLife?.[monthElement]?.mid || '';
+    const lateLife = copy.elementLifeLabels?.[timeElement] || copy.elementLife?.[timeElement]?.late || '';
+    return template
+        .replace('{animalTrait}', animalTrait)
+        .replace('{relationTip}', advice.relation || '')
+        .replace('{workTip}', advice.work || '')
+        .replace('{moneyTip}', advice.money || '')
+        .replace('{earlyLife}', earlyLife)
+        .replace('{midLife}', midLife)
+        .replace('{lateLife}', lateLife);
 }
 
 function setResultImage(src) {
@@ -590,6 +859,35 @@ function getDayPillarIndex(yearValue, monthValue, dayValue) {
     const daysSince = Math.floor((targetUTC - anchorUTC) / 86400000);
     const anchorIndex = 40;
     return ((daysSince + anchorIndex) % 60 + 60) % 60;
+}
+
+function getYearPillarIndex(yearValue) {
+    const year = parseInt(yearValue, 10);
+    const anchorYear = 1984;
+    const anchorIndex = 0;
+    return ((year - anchorYear + anchorIndex) % 60 + 60) % 60;
+}
+
+function getMonthPillarIndex(yearValue, monthValue) {
+    const yearIndex = getYearPillarIndex(yearValue);
+    const month = parseInt(monthValue, 10);
+    if (Number.isNaN(month)) {
+        return yearIndex;
+    }
+    return ((yearIndex % 10) * 12 + (month - 1)) % 60;
+}
+
+function getTimePillarIndex(dayIndex, timeValue) {
+    if (!timeValue) {
+        return null;
+    }
+    const [hourString] = timeValue.split(':');
+    const hour = parseInt(hourString, 10);
+    if (Number.isNaN(hour)) {
+        return null;
+    }
+    const branchIndex = Math.floor(((hour + 1) % 24) / 2);
+    return ((dayIndex % 10) * 12 + branchIndex) % 60;
 }
 
 applyLanguage(currentLang);
