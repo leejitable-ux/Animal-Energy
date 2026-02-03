@@ -235,8 +235,8 @@ p {
 
 .hero {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 28px;
     align-items: center;
 }
 
@@ -253,6 +253,19 @@ p {
 
 .hero-text {
     text-align: left;
+}
+
+.hero-banner {
+    text-align: center;
+    padding: 26px 28px;
+    border-radius: 22px;
+    background: linear-gradient(140deg, #fff0f6, #f0f7ff);
+    border: 1px solid #f6d7e6;
+    box-shadow: 0 16px 28px rgba(255, 167, 195, 0.18);
+}
+
+.hero-banner .eyebrow {
+    justify-content: center;
 }
 
 .hero-text h1 {
@@ -287,6 +300,10 @@ p {
     flex-wrap: wrap;
 }
 
+.hero-banner .hero-actions {
+    justify-content: center;
+}
+
 .ghost-link {
     display: inline-flex;
     align-items: center;
@@ -308,6 +325,11 @@ p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
     margin-top: 1.6rem;
+}
+
+.hero-banner .trust-row {
+    max-width: 540px;
+    margin: 1.4rem auto 0;
 }
 
 .trust-card {
@@ -363,6 +385,10 @@ p {
 
 .card-header {
     margin-bottom: 1rem;
+}
+
+.card-header-center {
+    text-align: center;
 }
 
 .input-group {
