@@ -6,90 +6,107 @@
     <title>Insights</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-page="insights">
-    <div class="lang-switcher">
-        <label for="languageSelect" id="langLabel"></label>
-        <select id="languageSelect" aria-label="">
-            <option value="en"></option>
-            <option value="ja"></option>
-            <option value="ko"></option>
-        </select>
-    </div>
+<body class="page-doc">
     <header class="site-header">
         <div class="brand">
             <div class="brand-mark">AE</div>
             <div class="brand-text">
-                <span id="brandName" class="brand-name"></span>
-                <span id="brandTagline" class="brand-tagline"></span>
+                <span class="brand-name">Animal Energy</span>
+                <span class="brand-tagline">Global ILJU Insight Studio</span>
             </div>
         </div>
         <nav class="site-nav">
-            <a class="nav-link" href="overview.html" id="navOverview"></a>
-            <a class="nav-link" href="insights.html" id="navInsights"></a>
-            <a class="nav-link" href="plans.html" id="navPlans"></a>
-            <a class="nav-link" href="support.html" id="navSupport"></a>
+            <a class="nav-link" href="overview.html">Overview</a>
+            <a class="nav-link" href="insights.html">Insights</a>
+            <a class="nav-link" href="plans.html">Plans</a>
+            <a class="nav-link" href="support.html">Support</a>
         </nav>
         <div class="auth-actions">
-            <button class="ghost-button" id="loginButton" type="button"></button>
-            <button class="solid-button" id="signupButton" type="button"></button>
+            <button class="ghost-button" type="button">Log in</button>
+            <button class="solid-button" type="button">Create account</button>
         </div>
     </header>
 
     <main class="page">
-        <section class="page-hero">
-            <div class="hero-copy">
-                <span id="pageEyebrow" class="eyebrow"></span>
-                <h1 id="pageTitle"></h1>
-                <p id="pageSubtitle"></p>
-                <div class="hero-actions">
-                    <a id="primaryCta" class="solid-button" href="index.html" data-link="index.html"></a>
-                    <a id="secondaryCta" class="ghost-link" href="plans.html" data-link="plans.html"></a>
-                </div>
-            </div>
-            <div class="hero-panel">
-                <div class="panel-card">
-                    <h3 id="heroPanelTitle"></h3>
-                    <p id="heroPanelText"></p>
-                </div>
+        <div class="page-label">Insight</div>
+
+        <section class="section-block summary-card">
+            <h1>Your Animal Energy</h1>
+            <p>
+                This summary combines an archetype with elemental energy to outline tendencies and
+                context. People with this energy often find themselves noticing similar themes across
+                work, relationships, and daily decisions.
+            </p>
+        </section>
+
+        <section class="section-block">
+            <h2>What this energy means</h2>
+            <div class="card-grid dense">
+                <article class="info-card">
+                    <h3>Core archetype</h3>
+                    <p>
+                        You may tend to approach situations through a clear archetype lens, which can
+                        shape how you interpret signals and choose next steps.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <h3>Elemental tone</h3>
+                    <p>
+                        This type of energy tends to show up as a consistent tone in how you pace
+                        yourself, respond to change, and prioritize focus.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <h3>Keyword tendencies</h3>
+                    <p>
+                        Short themes help translate the traditional system into everyday language,
+                        so you can reflect without over-reading the result.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section class="section">
-            <div class="section-heading">
-                <h2 id="sectionOneTitle"></h2>
-            </div>
-            <div class="card-grid">
+        <section class="section-block alt-block">
+            <h2>How it shows up in daily life</h2>
+            <div class="card-grid dense">
                 <article class="info-card">
-                    <h3 id="insightOneTitle"></h3>
-                    <p id="insightOneText"></p>
+                    <h3>Work</h3>
+                    <p>
+                        You may tend to prefer steady progress and clear direction, often noticing
+                        patterns before others do.
+                    </p>
                 </article>
                 <article class="info-card">
-                    <h3 id="insightTwoTitle"></h3>
-                    <p id="insightTwoText"></p>
+                    <h3>Relationships</h3>
+                    <p>
+                        People with this energy often find themselves drawn to reliable connection
+                        and communication that feels grounded.
+                    </p>
                 </article>
                 <article class="info-card">
-                    <h3 id="insightThreeTitle"></h3>
-                    <p id="insightThreeText"></p>
+                    <h3>Under pressure</h3>
+                    <p>
+                        This type of energy tends to show up as a desire to stabilize, step back,
+                        and reframe the situation before acting.
+                    </p>
                 </article>
             </div>
         </section>
 
-        <section class="section alt">
-            <div class="split">
-                <div>
-                    <h2 id="sectionTwoTitle"></h2>
-                    <p id="sampleLead"></p>
-                    <ul class="feature-list">
-                        <li id="sampleItem1"></li>
-                        <li id="sampleItem2"></li>
-                        <li id="sampleItem3"></li>
-                    </ul>
-                </div>
-                <div class="sample-card">
-                    <h3 id="sampleCardTitle"></h3>
-                    <p id="sampleCardText"></p>
-                </div>
-            </div>
+        <section class="section-block">
+            <h2>Cultural note</h2>
+            <p>
+                Saju is a traditional system. We present it as cultural insight and a personality
+                framework, emphasizing structure and context rather than dramatic claims.
+            </p>
+        </section>
+
+        <section class="section-block disclaimer">
+            <h2>Disclaimer</h2>
+            <p>
+                This insight is intended for reflection and entertainment, not as a tool for making
+                major life decisions.
+            </p>
         </section>
     </main>
 
@@ -98,19 +115,18 @@
             <div class="brand footer-brand">
                 <div class="brand-mark">AE</div>
                 <div class="brand-text">
-                    <span id="footerBrand"></span>
-                    <span id="footerTagline"></span>
+                    <span>Animal Energy</span>
+                    <span>Global ILJU Insight Studio</span>
                 </div>
             </div>
-            <p id="footerText"></p>
+            <p>A professional, global-first interpretation of ILJU symbols for modern decision-making.</p>
         </div>
         <div class="footer-links">
-            <a href="overview.html" id="footerLinkOverview"></a>
-            <a href="insights.html" id="footerLinkInsights"></a>
-            <a href="plans.html" id="footerLinkPlans"></a>
-            <a href="support.html" id="footerLinkSupport"></a>
+            <a href="overview.html">Overview</a>
+            <a href="insights.html">Insights</a>
+            <a href="plans.html">Plans</a>
+            <a href="support.html">Support</a>
         </div>
     </footer>
-    <script src="page.js"></script>
 </body>
 </html>
