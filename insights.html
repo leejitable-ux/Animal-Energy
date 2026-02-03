@@ -6,107 +6,87 @@
     <title>Insights</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-doc">
+<body class="page-doc" data-page="insight">
+    <div class="lang-switcher">
+        <label for="languageSelect" id="langLabel"></label>
+        <select id="languageSelect" aria-label="">
+            <option value="en"></option>
+            <option value="ja"></option>
+            <option value="ko"></option>
+        </select>
+    </div>
     <header class="site-header">
         <div class="brand">
             <div class="brand-mark">AE</div>
             <div class="brand-text">
-                <span class="brand-name">Animal Energy</span>
-                <span class="brand-tagline">Global ILJU Insight Studio</span>
+                <span class="brand-name" id="brandName"></span>
+                <span class="brand-tagline" id="brandTagline"></span>
             </div>
         </div>
         <nav class="site-nav">
-            <a class="nav-link" href="overview.html">Overview</a>
-            <a class="nav-link" href="insights.html">Insights</a>
-            <a class="nav-link" href="plans.html">Plans</a>
-            <a class="nav-link" href="support.html">Support</a>
+            <a class="nav-link" href="overview.html" id="navOverview"></a>
+            <a class="nav-link" href="insights.html" id="navInsights"></a>
+            <a class="nav-link" href="plans.html" id="navPlans"></a>
+            <a class="nav-link" href="support.html" id="navSupport"></a>
         </nav>
         <div class="auth-actions">
-            <button class="ghost-button" type="button">Log in</button>
-            <button class="solid-button" type="button">Create account</button>
+            <button class="ghost-button" type="button" id="loginButton"></button>
+            <button class="solid-button" type="button" id="signupButton"></button>
         </div>
     </header>
 
     <main class="page">
-        <div class="page-label">Insight</div>
+        <div class="page-label" id="pageLabel"></div>
 
         <section class="section-block summary-card">
-            <h1>Your Animal Energy</h1>
-            <p>
-                This summary combines an archetype with elemental energy to outline tendencies and
-                context. People with this energy often find themselves noticing similar themes across
-                work, relationships, and daily decisions.
-            </p>
+            <h1 id="summaryTitle"></h1>
+            <p id="summaryText"></p>
         </section>
 
         <section class="section-block">
-            <h2>What this energy means</h2>
+            <h2 id="meaningTitle"></h2>
             <div class="card-grid dense">
                 <article class="info-card">
-                    <h3>Core archetype</h3>
-                    <p>
-                        You may tend to approach situations through a clear archetype lens, which can
-                        shape how you interpret signals and choose next steps.
-                    </p>
+                    <h3 id="meaningCardTitle1"></h3>
+                    <p id="meaningCardText1"></p>
                 </article>
                 <article class="info-card">
-                    <h3>Elemental tone</h3>
-                    <p>
-                        This type of energy tends to show up as a consistent tone in how you pace
-                        yourself, respond to change, and prioritize focus.
-                    </p>
+                    <h3 id="meaningCardTitle2"></h3>
+                    <p id="meaningCardText2"></p>
                 </article>
                 <article class="info-card">
-                    <h3>Keyword tendencies</h3>
-                    <p>
-                        Short themes help translate the traditional system into everyday language,
-                        so you can reflect without over-reading the result.
-                    </p>
+                    <h3 id="meaningCardTitle3"></h3>
+                    <p id="meaningCardText3"></p>
                 </article>
             </div>
         </section>
 
         <section class="section-block alt-block">
-            <h2>How it shows up in daily life</h2>
+            <h2 id="dailyTitle"></h2>
             <div class="card-grid dense">
                 <article class="info-card">
-                    <h3>Work</h3>
-                    <p>
-                        You may tend to prefer steady progress and clear direction, often noticing
-                        patterns before others do.
-                    </p>
+                    <h3 id="dailyCardTitle1"></h3>
+                    <p id="dailyCardText1"></p>
                 </article>
                 <article class="info-card">
-                    <h3>Relationships</h3>
-                    <p>
-                        People with this energy often find themselves drawn to reliable connection
-                        and communication that feels grounded.
-                    </p>
+                    <h3 id="dailyCardTitle2"></h3>
+                    <p id="dailyCardText2"></p>
                 </article>
                 <article class="info-card">
-                    <h3>Under pressure</h3>
-                    <p>
-                        This type of energy tends to show up as a desire to stabilize, step back,
-                        and reframe the situation before acting.
-                    </p>
+                    <h3 id="dailyCardTitle3"></h3>
+                    <p id="dailyCardText3"></p>
                 </article>
             </div>
         </section>
 
         <section class="section-block">
-            <h2>Cultural note</h2>
-            <p>
-                Saju is a traditional system. We present it as cultural insight and a personality
-                framework, emphasizing structure and context rather than dramatic claims.
-            </p>
+            <h2 id="culturalTitle"></h2>
+            <p id="culturalText"></p>
         </section>
 
         <section class="section-block disclaimer">
-            <h2>Disclaimer</h2>
-            <p>
-                This insight is intended for reflection and entertainment, not as a tool for making
-                major life decisions.
-            </p>
+            <h2 id="disclaimerTitle"></h2>
+            <p id="disclaimerText"></p>
         </section>
     </main>
 
@@ -115,18 +95,19 @@
             <div class="brand footer-brand">
                 <div class="brand-mark">AE</div>
                 <div class="brand-text">
-                    <span>Animal Energy</span>
-                    <span>Global ILJU Insight Studio</span>
+                    <span id="footerBrand"></span>
+                    <span id="footerTagline"></span>
                 </div>
             </div>
-            <p>A professional, global-first interpretation of ILJU symbols for modern decision-making.</p>
+            <p id="footerText"></p>
         </div>
         <div class="footer-links">
-            <a href="overview.html">Overview</a>
-            <a href="insights.html">Insights</a>
-            <a href="plans.html">Plans</a>
-            <a href="support.html">Support</a>
+            <a href="overview.html" id="footerLinkOverview"></a>
+            <a href="insights.html" id="footerLinkInsights"></a>
+            <a href="plans.html" id="footerLinkPlans"></a>
+            <a href="support.html" id="footerLinkSupport"></a>
         </div>
     </footer>
+    <script src="page.js"></script>
 </body>
 </html>

@@ -23,53 +23,43 @@ const i18n = {
         },
         pages: {
             overview: {
-                pageEyebrow: 'Service Overview',
-                pageTitle: 'Professional ILJU readings for modern life',
-                pageSubtitle: 'A structured, international-friendly interpretation system that turns tradition into clarity.',
-                primaryCta: 'Start a reading',
-                secondaryCta: 'View plans',
-                panelTitle: 'Built for global users',
-                panelText: 'We simplify complex symbolism into clear guidance you can share and revisit.',
-                panelStat1: '20+ countries',
-                panelStat2: 'Private profiles',
-                panelStat3: 'Exportable summaries',
-                sectionOneTitle: 'How it works',
-                stepOneTitle: 'Enter your birth data',
-                stepOneText: 'We calculate your day pillar, animal, and elemental balance.',
-                stepTwoTitle: 'Receive a clear summary',
-                stepTwoText: 'Key themes appear in a structured, easy-to-read layout.',
-                stepThreeTitle: 'Save or share',
-                stepThreeText: 'Store readings in your dashboard or export for consultation.',
-                sectionTwoTitle: 'What you receive',
-                featureOne: 'ILJU animal and element profile',
-                featureTwo: 'Keyword themes and seasonal tone',
-                featureThree: 'Professional-format summary cards',
-                featureFour: 'Cross-language sharing tools',
-                sectionThreeTitle: 'Designed for international clarity',
-                sectionThreeText: 'We focus on consistency, privacy, and clean interpretation so global users can trust the output.'
+                pageLabel: 'Overview',
+                heroTitle: 'Eastern astrology, translated for modern life.',
+                heroText: 'Animal Energy is a cultural insight platform built on Saju, a traditional system that interprets energy patterns, tendencies, and archetypes through birth data.',
+                whatTitle: 'What is Saju',
+                whatText: 'Saju is a traditional system that reads the balance of elemental energy and symbolic archetypes tied to a birth date. It is not a promise of outcomes; it is a structured way to reflect on tendencies, strengths, and context.',
+                whyTitle: 'Why Animal Energy',
+                whyText: 'We organize complex symbolism into clear language for global readers. The goal is cultural insight you can discuss and revisit, without leaning on superstition or dramatic claims.',
+                getTitle: 'What You Get',
+                getItem1: 'Energy profile and key tendencies in plain language',
+                getItem2: 'Archetype summary with cultural context',
+                getItem3: 'Balanced themes that support self-reflection',
+                getItem4: 'A traditional system presented with modern structure',
+                trustTitle: 'Not Random',
+                trustText: 'This system has been refined for generations. We present it as a cultural framework, emphasizing clarity, consistency, and respect for traditional system logic.'
             },
-            insights: {
-                pageEyebrow: 'Insights',
-                pageTitle: 'Understand what your symbols reveal',
-                pageSubtitle: 'Each reading translates traditional symbols into accessible, modern language.',
-                primaryCta: 'Get my insight',
-                secondaryCta: 'See plans',
-                heroPanelTitle: 'Focused guidance',
-                heroPanelText: 'We highlight the most relevant themes for fast understanding.',
-                sectionOneTitle: 'Core insight pillars',
-                insightOneTitle: 'Animal archetype',
-                insightOneText: 'Your day animal represents instinctual strengths and direction.',
-                insightTwoTitle: 'Elemental energy',
-                insightTwoText: 'Five-element balance reveals temperament and momentum.',
-                insightThreeTitle: 'Keyword focus',
-                insightThreeText: 'Short, actionable themes keep the reading practical.',
-                sectionTwoTitle: 'Sample breakdown',
-                sampleLead: 'What your report includes:',
-                sampleItem1: 'Day pillar summary and symbolic translation',
-                sampleItem2: 'Element balance with tonal guidance',
-                sampleItem3: 'Behavioral cues and life planning notes',
-                sampleCardTitle: 'Sample Insight Card',
-                sampleCardText: 'A concise, global-ready summary designed for sharing and saving.'
+            insight: {
+                pageLabel: 'Insight',
+                summaryTitle: 'Your Animal Energy',
+                summaryText: 'This summary combines an archetype with elemental energy to outline tendencies and context. People with this energy often find themselves noticing similar themes across work, relationships, and daily decisions.',
+                meaningTitle: 'What this energy means',
+                meaningCardTitle1: 'Core archetype',
+                meaningCardText1: 'You may tend to approach situations through a clear archetype lens, which can shape how you interpret signals and choose next steps.',
+                meaningCardTitle2: 'Elemental tone',
+                meaningCardText2: 'This type of energy tends to show up as a consistent tone in how you pace yourself, respond to change, and prioritize focus.',
+                meaningCardTitle3: 'Keyword tendencies',
+                meaningCardText3: 'Short themes help translate the traditional system into everyday language, so you can reflect without over-reading the result.',
+                dailyTitle: 'How it shows up in daily life',
+                dailyCardTitle1: 'Work',
+                dailyCardText1: 'You may tend to prefer steady progress and clear direction, often noticing patterns before others do.',
+                dailyCardTitle2: 'Relationships',
+                dailyCardText2: 'People with this energy often find themselves drawn to reliable connection and communication that feels grounded.',
+                dailyCardTitle3: 'Under pressure',
+                dailyCardText3: 'This type of energy tends to show up as a desire to stabilize, step back, and reframe the situation before acting.',
+                culturalTitle: 'Cultural note',
+                culturalText: 'Saju is a traditional system. We present it as cultural insight and a personality framework, emphasizing structure and context rather than dramatic claims.',
+                disclaimerTitle: 'Disclaimer',
+                disclaimerText: 'This insight is intended for reflection and entertainment, not as a tool for making major life decisions.'
             },
             plans: {
                 pageEyebrow: 'Plans',
@@ -151,53 +141,43 @@ const i18n = {
         },
         pages: {
             overview: {
-                pageEyebrow: 'サービス概要',
-                pageTitle: '現代向けのプロ日柱リーディング',
-                pageSubtitle: '伝統的な象徴を、グローバルでも理解できる明快な形に。',
-                primaryCta: '診断を始める',
-                secondaryCta: 'プランを見る',
-                panelTitle: '世界対応の設計',
-                panelText: '複雑な象徴を、共有しやすい言葉と構造に整理します。',
-                panelStat1: '20か国以上',
-                panelStat2: 'プライベート管理',
-                panelStat3: 'レポート出力',
-                sectionOneTitle: '流れ',
-                stepOneTitle: '生年月日を入力',
-                stepOneText: '日柱・動物・五行バランスを計算します。',
-                stepTwoTitle: '整理された要約',
-                stepTwoText: 'テーマをわかりやすい構成で表示します。',
-                stepThreeTitle: '保存・共有',
-                stepThreeText: 'ダッシュボードに保存し、相談用に出力できます。',
-                sectionTwoTitle: '提供内容',
-                featureOne: '日柱動物と五行プロフィール',
-                featureTwo: 'キーワードテーマと季節のトーン',
-                featureThree: 'プロ形式の要約カード',
-                featureFour: '多言語共有ツール',
-                sectionThreeTitle: '国際ユーザー向け',
-                sectionThreeText: '一貫性・プライバシー・明快さを重視しています。'
+                pageLabel: '概要',
+                heroTitle: '東洋占星術を、現代の言葉で。',
+                heroText: 'Animal Energyは、Sajuという伝統システムを土台に、エネルギーの傾向やアーキタイプを読み解く文化的インサイトのプラットフォームです。',
+                whatTitle: 'Sajuとは',
+                whatText: 'Sajuは生年月日に紐づく五行バランスと象徴的アーキタイプを読み取る伝統的な枠組みです。結果の約束ではなく、傾向や強みを見つめるための構造化された視点です。',
+                whyTitle: 'なぜAnimal Energy',
+                whyText: '複雑な象徴を、国際ユーザーにも理解しやすい言葉に整理します。迷信的ではなく、文化的インサイトとして共有できる形にします。',
+                getTitle: '提供内容',
+                getItem1: 'わかりやすいエネルギープロフィールと傾向',
+                getItem2: '文化的背景を含んだアーキタイプの要約',
+                getItem3: '自己理解を支えるバランスの取れたテーマ',
+                getItem4: '伝統システムを現代的構造で提示',
+                trustTitle: '偶然ではありません',
+                trustText: 'このシステムは長く磨かれてきました。私たちは文化的フレームとして、明快さと一貫性を重視して提供します。'
             },
-            insights: {
-                pageEyebrow: 'インサイト',
-                pageTitle: '象徴が示す意味を理解する',
-                pageSubtitle: '伝統的な意味を、現代的にわかりやすく翻訳します。',
-                primaryCta: 'インサイトを見る',
-                secondaryCta: 'プランを見る',
-                heroPanelTitle: '要点だけ',
-                heroPanelText: '重要なテーマを素早く把握できます。',
-                sectionOneTitle: 'コア要素',
-                insightOneTitle: '動物アーキタイプ',
-                insightOneText: '日柱動物は本質的な強みと方向性を示します。',
-                insightTwoTitle: '五行の気',
-                insightTwoText: '五行バランスは性質と流れを映します。',
-                insightThreeTitle: 'キーワード',
-                insightThreeText: '実用的な短いテーマで整理します。',
-                sectionTwoTitle: 'サンプル内訳',
-                sampleLead: 'レポートに含まれる内容:',
-                sampleItem1: '日柱サマリーと象徴の説明',
-                sampleItem2: '五行バランスとトーン',
-                sampleItem3: '行動のヒントと計画ノート',
-                sampleCardTitle: 'サンプルカード',
-                sampleCardText: '共有と保存を前提にした簡潔な要約です。'
+            insight: {
+                pageLabel: 'インサイト',
+                summaryTitle: 'あなたのAnimal Energy',
+                summaryText: 'この要約はアーキタイプとエネルギーを組み合わせ、傾向と文脈を示します。仕事や人間関係などで共通するテーマに気づきやすくなります。',
+                meaningTitle: 'このエネルギーが意味するもの',
+                meaningCardTitle1: 'コアアーキタイプ',
+                meaningCardText1: 'あなたは状況をアーキタイプの視点で捉えがちで、その視点が判断の流れに影響します。',
+                meaningCardTitle2: 'エレメントのトーン',
+                meaningCardText2: 'このタイプのエネルギーは、ペースや変化への反応、集中の配分に一定の傾向として現れます。',
+                meaningCardTitle3: 'キーワード傾向',
+                meaningCardText3: '短いテーマが、伝統的な内容を日常の言葉へ翻訳する助けになります。',
+                dailyTitle: '日常での現れ方',
+                dailyCardTitle1: '仕事',
+                dailyCardText1: '着実な進行と明確な方向性を好む傾向があり、パターンを先に捉えやすいです。',
+                dailyCardTitle2: '人間関係',
+                dailyCardText2: '安定したつながりや、地に足の着いた対話に惹かれやすいです。',
+                dailyCardTitle3: 'プレッシャー下',
+                dailyCardText3: 'このタイプは安定を求め、状況を一歩引いて整理してから動く傾向があります。',
+                culturalTitle: '文化的メモ',
+                culturalText: 'Sajuは伝統的なシステムです。私たちは文化的インサイトと性格フレームとして提示し、誇張は避けます。',
+                disclaimerTitle: '免責事項',
+                disclaimerText: 'このインサイトは内省や娯楽のためのものであり、重要な判断の道具ではありません。'
             },
             plans: {
                 pageEyebrow: 'プラン',
@@ -279,53 +259,43 @@ const i18n = {
         },
         pages: {
             overview: {
-                pageEyebrow: '서비스 개요',
-                pageTitle: '현대적 일주 리딩',
-                pageSubtitle: '전통 상징을 글로벌 사용자도 이해할 수 있게 정리합니다.',
-                primaryCta: '진단 시작',
-                secondaryCta: '플랜 보기',
-                panelTitle: '글로벌 사용자용 설계',
-                panelText: '복잡한 상징을 명확한 구조로 정리해 제공합니다.',
-                panelStat1: '20개국 이상',
-                panelStat2: '프라이빗 관리',
-                panelStat3: '리포트 출력',
-                sectionOneTitle: '이용 흐름',
-                stepOneTitle: '생년 정보 입력',
-                stepOneText: '일주, 동물, 오행 밸런스를 계산합니다.',
-                stepTwoTitle: '명확한 요약',
-                stepTwoText: '핵심 테마를 정돈된 카드로 제공합니다.',
-                stepThreeTitle: '저장 및 공유',
-                stepThreeText: '대시보드 저장과 상담용 출력이 가능합니다.',
-                sectionTwoTitle: '제공 내용',
-                featureOne: '일주 동물 · 오행 프로필',
-                featureTwo: '키워드 테마와 계절 톤',
-                featureThree: '전문 요약 카드',
-                featureFour: '다국어 공유 도구',
-                sectionThreeTitle: '국제 사용자 중심',
-                sectionThreeText: '일관성, 프라이버시, 명확성을 우선합니다.'
+                pageLabel: '개요',
+                heroTitle: '동양 점성학을 현대적으로 풀어내다.',
+                heroText: 'Animal Energy는 Saju 전통 시스템을 기반으로 에너지의 경향과 아키타입을 해석하는 문화적 인사이트 플랫폼입니다.',
+                whatTitle: 'Saju란',
+                whatText: 'Saju는 생년월일에 연결된 오행의 균형과 상징적 아키타입을 읽는 전통 체계입니다. 결과를 단정하기보다 경향과 강점을 바라보는 구조화된 관점입니다.',
+                whyTitle: '왜 Animal Energy인가',
+                whyText: '복잡한 상징을 글로벌 사용자도 이해할 수 있도록 명확한 언어로 정리합니다. 미신적 접근이 아니라 문화적 인사이트로 전달합니다.',
+                getTitle: '제공 내용',
+                getItem1: '명확한 에너지 프로필과 핵심 경향',
+                getItem2: '문화적 맥락을 담은 아키타입 요약',
+                getItem3: '자기 성찰을 돕는 균형 잡힌 테마',
+                getItem4: '전통 시스템을 현대적 구조로 제공',
+                trustTitle: '우연이 아닙니다',
+                trustText: '이 시스템은 오랜 시간 다듬어져 왔습니다. 우리는 문화적 프레임으로서 명확성과 일관성을 강조합니다.'
             },
-            insights: {
-                pageEyebrow: '인사이트',
-                pageTitle: '상징이 말하는 의미',
-                pageSubtitle: '전통적 해석을 현대적 언어로 전달합니다.',
-                primaryCta: '인사이트 보기',
-                secondaryCta: '플랜 보기',
-                heroPanelTitle: '핵심만 전달',
-                heroPanelText: '가장 중요한 테마를 빠르게 파악합니다.',
-                sectionOneTitle: '핵심 인사이트',
-                insightOneTitle: '동물 아키타입',
-                insightOneText: '일주 동물은 본능적 강점과 방향을 보여줍니다.',
-                insightTwoTitle: '오행 에너지',
-                insightTwoText: '오행 밸런스는 성향과 흐름을 나타냅니다.',
-                insightThreeTitle: '키워드 포커스',
-                insightThreeText: '실행 가능한 핵심 테마를 제공합니다.',
-                sectionTwoTitle: '샘플 구성',
-                sampleLead: '리포트 구성:',
-                sampleItem1: '일주 요약과 상징 해석',
-                sampleItem2: '오행 밸런스와 톤',
-                sampleItem3: '행동 포인트 및 계획 노트',
-                sampleCardTitle: '샘플 인사이트 카드',
-                sampleCardText: '공유와 저장에 최적화된 요약 카드입니다.'
+            insight: {
+                pageLabel: '인사이트',
+                summaryTitle: '당신의 Animal Energy',
+                summaryText: '이 요약은 아키타입과 에너지를 결합해 경향과 맥락을 보여줍니다. 일상 속 반복되는 테마를 인식하는 데 도움이 됩니다.',
+                meaningTitle: '이 에너지가 의미하는 것',
+                meaningCardTitle1: '핵심 아키타입',
+                meaningCardText1: '당신은 상황을 아키타입의 관점에서 해석하는 경향이 있어, 신호를 읽고 다음 행동을 정하는 방식에 영향을 줄 수 있습니다.',
+                meaningCardTitle2: '에너지원의 톤',
+                meaningCardText2: '이 에너지는 페이스 조절, 변화 대응, 집중 배분에서 일정한 톤으로 나타나는 경향이 있습니다.',
+                meaningCardTitle3: '키워드 경향',
+                meaningCardText3: '짧은 테마는 전통적 내용을 일상 언어로 번역해 과도한 해석을 줄입니다.',
+                dailyTitle: '일상에서의 모습',
+                dailyCardTitle1: '일',
+                dailyCardText1: '안정적인 진행과 명확한 방향성을 선호하며, 패턴을 먼저 포착하는 경향이 있습니다.',
+                dailyCardTitle2: '관계',
+                dailyCardText2: '안정적인 연결과 차분한 소통에 끌리는 경우가 많습니다.',
+                dailyCardTitle3: '압박 상황',
+                dailyCardText3: '이 에너지는 상황을 안정시키고 한 걸음 물러나 재정리한 뒤 행동하는 경향으로 나타납니다.',
+                culturalTitle: '문화적 노트',
+                culturalText: 'Saju는 전통 시스템입니다. 우리는 문화적 인사이트와 성격 프레임으로서 구조와 맥락을 강조합니다.',
+                disclaimerTitle: '면책 사항',
+                disclaimerText: '이 인사이트는 성찰과 엔터테인먼트를 위한 것으로, 중요한 결정을 위한 도구가 아닙니다.'
             },
             plans: {
                 pageEyebrow: '플랜',
@@ -390,15 +360,36 @@ const langSwitcher = document.querySelector('.lang-switcher');
 const pageName = document.body.dataset.page;
 let currentLang = 'en';
 
+function detectDefaultLang() {
+    const locale = navigator.language || 'en';
+    const normalized = locale.replace('_', '-');
+    const parts = normalized.split('-');
+    const lang = parts[0]?.toLowerCase();
+    const region = parts[1]?.toUpperCase() || '';
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+
+    if (lang === 'ko' || region === 'KR' || timeZone.includes('Seoul')) {
+        return 'ko';
+    }
+    if (lang === 'ja' || region === 'JP' || timeZone.includes('Tokyo')) {
+        return 'ja';
+    }
+    return 'en';
+}
+
 const urlLang = new URLSearchParams(window.location.search).get('lang');
 const savedLang = sessionStorage.getItem('lang');
 if (savedLang && i18n[savedLang]) {
     currentLang = savedLang;
-}
-if (urlLang && i18n[urlLang]) {
+} else if (urlLang && i18n[urlLang]) {
     currentLang = urlLang;
+} else {
+    currentLang = detectDefaultLang();
 }
-languageSelect.value = currentLang;
+
+if (languageSelect) {
+    languageSelect.value = currentLang;
+}
 
 languageSelect.addEventListener('change', (event) => {
     currentLang = event.target.value;
